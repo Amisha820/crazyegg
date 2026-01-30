@@ -719,31 +719,31 @@
                     <div class="meta-description-tool" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 40px; border-radius: 16px; margin: 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #e8f5e8;">
                        
                         <div class="form-group" style="margin-bottom: 25px;">
-                            <label for="page-title" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Page Title</label>
-                            <input type="text" id="page-title" placeholder="Enter your page title..." style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">
+                            <label for="page-title" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Page Title</label>
+                            <input type="text" id="page-title" placeholder="Enter your page title..." style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">
                         </div>
                        
                         <div class="form-group" style="margin-bottom: 25px;">
-                            <label for="page-content" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Page Content/Keywords</label>
-                            <textarea id="page-content" placeholder="Describe your page content or enter keywords..." rows="4" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; resize: vertical; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: inherit; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;"></textarea>
+                            <label for="page-content" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Page Content/Keywords</label>
+                            <textarea id="page-content" placeholder="Describe your page content or enter keywords..." rows="4" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; resize: vertical; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;"></textarea>
                         </div>
                        
                         <div class="form-group" style="margin-bottom: 30px;">
-                            <label for="target-keyword" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Target Keyword (Optional)</label>
-                            <input type="text" id="target-keyword" placeholder="Enter your main keyword..." style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">
+                            <label for="target-keyword" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Target Keyword (Optional)</label>
+                            <input type="text" id="target-keyword" placeholder="Enter your main keyword..." style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">
                         </div>
                        
-                        <button onclick="generateMetaDescription()" style="background: linear-gradient(135deg, #8abc00 0%, #7ba600 100%); color: white; padding: 18px 40px; border: none; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; width: 100%; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(138, 188, 0, 0.3); font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Generate Meta Description</button>
+                        <button onclick="generateMetaDescription()" style="background: linear-gradient(135deg, #8abc00 0%, #7ba600 100%); color: white; padding: 18px 40px; border: none; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; width: 100%; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(138, 188, 0, 0.3); font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Generate Meta Description</button>
                        
                         <div id="result-container" style="margin-top: 35px; display: none;">
-                            <h3 style="margin-bottom: 20px; color: #2c3e50; text-align: center; font-size: 18px; font-weight: 600; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">✨ Generated Meta Description:</h3>
+                            <h3 style="margin-bottom: 20px; color: #2c3e50; text-align: center; font-size: 18px; font-weight: 600; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">✨ Generated Meta Description:</h3>
                             <div id="meta-result" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); padding: 25px; border-radius: 12px; border: 2px solid #8abc00; min-height: 100px; position: relative; box-shadow: 0 5px 20px rgba(138, 188, 0, 0.1);">
-                                <div id="meta-text" style="margin-bottom: 20px; line-height: 1.7; font-size: 16px; color: #2c3e50; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;"></div>
-                                <div id="char-count" style="position: absolute; bottom: 15px; right: 20px; font-size: 12px; color: #8abc00; font-weight: 600; background: rgba(138, 188, 0, 0.1); padding: 4px 8px; border-radius: 4px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;"></div>
+                                <div id="meta-text" style="margin-bottom: 20px; line-height: 1.7; font-size: 16px; color: #2c3e50; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;"></div>
+                                <div id="char-count" style="position: absolute; bottom: 15px; right: 20px; font-size: 12px; color: #8abc00; font-weight: 600; background: rgba(138, 188, 0, 0.1); padding: 4px 8px; border-radius: 4px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;"></div>
                             </div>
                             <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                                <button onclick="copyToClipboard()" style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3); font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">📋 Copy to Clipboard</button>
-                                <button onclick="regenerateDescription()" style="background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(108, 117, 125, 0.3); font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">🔄 Regenerate</button>
+                                <button onclick="copyToClipboard()" style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3); font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">📋 Copy to Clipboard</button>
+                                <button onclick="regenerateDescription()" style="background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(108, 117, 125, 0.3); font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">🔄 Regenerate</button>
                             </div>
                         </div>
                     </div>
@@ -1383,6 +1383,131 @@
   </section>
 </footer>
 
+
+<script>
+  function generateMetaDescription() {
+    const pageTitle = document.getElementById('page-title').value.trim();
+    const pageContent = document.getElementById('page-content').value.trim();
+    const targetKeyword = document.getElementById('target-keyword').value.trim();
+    
+    if (!pageTitle || !pageContent) {
+      alert('Please enter both page title and page content/keywords.');
+      return;
+    }
+    
+    // Generate meta description based on input
+    let description = generateDescriptionText(pageTitle, pageContent, targetKeyword);
+    
+    // Display the result
+    const resultContainer = document.getElementById('result-container');
+    const metaText = document.getElementById('meta-text');
+    const charCount = document.getElementById('char-count');
+    
+    metaText.textContent = description;
+    charCount.textContent = description.length + ' characters';
+    resultContainer.style.display = 'block';
+  }
+  
+  function generateDescriptionText(title, content, keyword) {
+    const templates = [
+      `Discover ${title} - ${content.substring(0, 50)}${content.length > 50 ? '...' : ''}. Learn how our ${keyword || 'solutions'} can help you achieve your goals.`,
+      `Looking for ${title || 'the best solution'}? ${content.substring(0, 60)}${content.length > 60 ? '...' : ''}. Get expert insights on ${keyword || 'this topic'}.`,
+      `${title}: ${content.substring(0, 70)}${content.length > 70 ? '...' : ''}. Find out why ${keyword || 'this approach'} is the right choice for you.`,
+      `Explore ${title} and ${content.substring(0, 40)}${content.length > 40 ? '...' : ''}. Your guide to ${keyword || 'success'} starts here.`,
+    ];
+    
+    // Select a random template
+    let description = templates[Math.floor(Math.random() * templates.length)];
+    
+    // Ensure it's within SEO best practices (150-160 characters)
+    if (description.length > 160) {
+      description = description.substring(0, 157) + '...';
+    } else if (description.length < 150) {
+      // Add padding if too short
+      description += ` Learn more about ${keyword || 'our services'} today.`;
+    }
+    
+    return description;
+  }
+  
+  function copyToClipboard() {
+    const metaText = document.getElementById('meta-text').textContent;
+    if (!metaText) {
+      alert('Please generate a meta description first.');
+      return;
+    }
+    
+    navigator.clipboard.writeText(metaText).then(() => {
+      // Show success feedback
+      const button = event.target;
+      const originalText = button.textContent;
+      button.textContent = '✅ Copied!';
+      button.style.background = 'linear-gradient(135deg, #28a745 0%, #218838 100%)';
+      
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.style.background = '';
+      }, 2000);
+    }).catch(() => {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = metaText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      const button = event.target;
+      const originalText = button.textContent;
+      button.textContent = '✅ Copied!';
+      
+      setTimeout(() => {
+        button.textContent = originalText;
+      }, 2000);
+    });
+  }
+  
+  function regenerateDescription() {
+    const pageTitle = document.getElementById('page-title').value.trim();
+    const pageContent = document.getElementById('page-content').value.trim();
+    const targetKeyword = document.getElementById('target-keyword').value.trim();
+    
+    if (!pageTitle || !pageContent) {
+      alert('Please enter both page title and page content/keywords first.');
+      return;
+    }
+    
+    // Generate a new description
+    let description = generateDescriptionText(pageTitle, pageContent, targetKeyword);
+    
+    // Update the result with animation
+    const metaText = document.getElementById('meta-text');
+    const charCount = document.getElementById('char-count');
+    
+    // Add fade effect
+    metaText.style.opacity = '0.5';
+    setTimeout(() => {
+      metaText.textContent = description;
+      charCount.textContent = description.length + ' characters';
+      metaText.style.opacity = '1';
+    }, 200);
+  }
+  
+  // Add enter key support for inputs
+  document.addEventListener('DOMContentLoaded', function() {
+    const inputs = ['page-title', 'page-content', 'target-keyword'];
+    inputs.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter' && id !== 'target-keyword') {
+            generateMetaDescription();
+          }
+        });
+      }
+    });
+  });
+</script>
 
 <div data-controller="island-footer">
   <div class="cen-island__footer" data-island-footer-target="island">
