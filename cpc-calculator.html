@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Crazy Egg, Inc">
+  <meta property="og:site_name" content="Crazy Egg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@crazyegg">
+  <meta name="theme-color" content="#8abc00" >
+<title>Free CPC Calculator | Calculate Cost Per Click in Any Currency</title>
+<meta name="description" content="Calculate your Cost Per Click (CPC) instantly with our free multi-currency calculator. Supports USD, EUR, GBP, INR, and 10+ currencies. Perfect for global PPC campaigns.">
+<meta name="og:image" content="https://www.crazyegg.com/images/png/cpc-calculator-banner.png">
+<meta property="og:url" content="https://www.crazyegg.com/cpc-calculator">
+<meta property="og:title" content="Free CPC Calculator | Calculate Cost Per Click in Any Currency">
+<meta property="og:description" content="Calculate your Cost Per Click (CPC) instantly with our free multi-currency calculator. Supports USD, EUR, GBP, INR, and 10+ currencies. Perfect for global PPC campaigns.">
+<meta name="twitter:image" content="https://www.crazyegg.com/images/png/cpc-calculator-banner.png">
+<meta name="twitter:title" content="Free CPC Calculator | Calculate Cost Per Click in Any Currency">
+<meta name="twitter:description" content="Calculate your Cost Per Click (CPC) instantly with our free multi-currency calculator. Supports 15+ global currencies for PPC campaigns.">
+  <link href="https://use.typekit.net/kdb3aqt.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        var CE_SNAPSHOT_NAME = "";
+    </script>
+
+  <link rel="stylesheet" href="https://w3-assets.crazyeggcdn.com/css/app-0150d5a3b9bb1c801a233a6705c5d93d.css?vsn=d"/>
+<script>
+  window._GDPR2 = {
+    ESSENTIAL: 'essential',
+    ANALYTICS: 'analytics',
+    MARKETING: 'marketing',
+
+    essential: [],
+    analytics: [],
+    marketing: [],
+
+    consent: "",
+
+    registerScript(id, scriptFunc, level, callback) {
+      if (window.CE_GDPR_V2 && window.CE_GDPR_V2.registerScript) {
+        window.CE_GDPR_V2.registerScript(id, scriptFunc, level, callback);
+      } else {
+        this[level].push({
+          id,
+          script: scriptFunc,
+          callback
+        });
+      }
+    },
+
+    updateConsent(consent) {
+      this.consent = consent;
+
+      if (window.CE_GDPR_V2) {
+        window.CE_GDPR_V2.updateConsent(consent);
+      }
+    }
+  }
+</script>
+
+  <script type="text/javascript" src="https://w3-assets.crazyeggcdn.com/js/app-c7ef0f03064dfc492d388163b403f505.js?vsn=d" id="app-js"></script>
+
+  <script type="text/javascript">
+    window._GDPR2.registerScript('ce_visitor', function () {
+      window.CE_VISITOR_ID='d2BJftsx1BNzyNz3qey3KUOvF01';
+
+      try {
+        window.CE_PAGE_STATE_ERROR = function(user_id, session_id, error) {
+          var errorMessage = error;
+
+          if (error instanceof Error) {
+            errorMessage = error.message;
+
+            if (error.status) {
+              errorMessage = errorMessage + " status:" + error.status;
+            }
+          } else if (typeof error === 'object') {
+            errorMessage = JSON.stringify(error);
+          }
+
+          window.serverLog({id: window.CE_VISITOR_ID, value: "page state error - user_id:" + user_id + ", session_id:" + session_id + ", error: " + errorMessage });
+        }
+
+        window.CE_NOT_TRACKING = function(reason) {
+          window.serverLog({id: window.CE_VISITOR_ID, value: `not tracking session: ${reason}`});
+        }
+      } catch (e) {
+        window.serverLog({id: window.CE_VISITOR_ID, value: "page state error callback exception:" + e.message });
+      }
+    }, window._GDPR2.ANALYTICS);
+  </script>
+<script>
+  // Typekit
+  window._GDPR2.registerScript('typekit', function() {
+    var a = document.createElement('link');
+    a.href = 'https://use.typekit.net/kdb3aqt.css';
+    a.rel = 'stylesheet';
+
+    var b = document.getElementsByTagName('link')[0];
+    b.parentNode.insertBefore(a, b);
+  }, window._GDPR2.ESSENTIAL);
+</script>
+
+  <script>
+    // Facebook Pixel Code
+    window._GDPR2.registerScript('fb_pixel', function() {
+      (window.CE_API || (window.CE_API = [])).push(function() {
+        var start = new Date().getTime();
+        function checkFB() {
+          if (new Date().getTime() - start > 1000 || (window.CE2 && CE2.tracker)) {
+            // Install Meta pixel
+            !function(f, b, e, v, n, t, s) {
+              if (f.fbq) return;
+              n = f.fbq = function() {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+              };
+              if (!f._fbq) f._fbq = n;
+              n.push = n;
+              n.loaded = !0;
+              n.version = '2.0';
+              n.queue = [];
+              t = b.createElement(e);
+              t.async = !0;
+              t.src = v;
+              s = b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '2271218543131129');
+            fbq('track', 'PageView');
+          } else {
+            setTimeout(checkFB, 100);
+          }
+        }
+        checkFB();
+      });
+    }, window._GDPR2.MARKETING);
+
+    window._GDPR2.registerScript('drip', function(){
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '9574608';
+      (function () {
+          var dc = document.createElement('script');
+          dc.type = 'text/javascript';
+          dc.async = true;
+          dc.src = '//tag.getdrip.com/9574608.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(dc, s);
+      })();
+    }, window._GDPR2.MARKETING);
+
+    // Start Global site tag (gtag.js) - AdWords: 1006334251
+    window._GDPR2.registerScript('gtag_start', 'https://www.googletagmanager.com/gtag/js?id=AW-1006334251', window._GDPR2.MARKETING, () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-1006334251', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+    });
+
+    // Crazy Egg Tracking Script
+    window._GDPR2.registerScript('ce_script', function() {
+      setTimeout(function() {
+        var a = document.createElement('script');
+        var b = document.getElementsByTagName('script')[0];
+        a.src = document.location.protocol + '//script.crazyegg.com/pages/scripts/0040/9118.js?' + Math.floor(new Date().getTime() / 3600000);
+        a.async = true;
+        a.type = 'text/javascript';
+        b.parentNode.insertBefore(a,b);
+        if (!window.CE_VISITOR_ID) {
+          throw new Error('CE: Visitor ID is not defined');
+        }
+      }, 1);
+    }, window._GDPR2.ANALYTICS);
+
+    // Global site tag (gtag.js) - Google Analytics
+    window._GDPR2.registerScript('gtag_site', 'https://www.googletagmanager.com/gtag/js?id=UA-30841-9', window._GDPR2.ANALYTICS, () => {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function() { dataLayer.push(arguments); };
+      gtag('js', new Date());
+
+      gtag('config', 'UA-30841-9', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+    });
+  </script>
+
+  <!-- Google Tag Manager GTM:CRAZYEGG.COM -->
+  <script>
+      window._GDPR2.registerScript('gtm_ce', function gtmRegister() {
+      (function(w,d,s,l,i) {w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-MS6FB4C')
+    }, window._GDPR2.ANALYTICS)
+  </script>
+  <!-- End Google Tag Manager GTM:CRAZYEGG.COM -->
+
+
+<script type="text/javascript">
+  window._GDPR2.registerScript('viewed_marketing_page', function () {
+    var sendViewedMarketingPage = function() {
+      if ("production".match(/test|e2e/i)) {
+        return;
+      }
+
+      if (window.CE2 && !!window.CE2.isBot(true)) {
+        return;
+      }
+
+      var metricsUrl = "https://metrics.crazyegg.com" + "/api/metrics";
+      var payload = {
+        metric: "viewed_marketing_page",
+        params: {
+          anonymous_id: CE_VISITOR_ID,
+          path: window.location.pathname
+        }
+      }
+
+      fetch(metricsUrl, {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json"},
+        body: JSON.stringify(payload)
+      })
+    }
+
+    if ("production".match(/production/i)) {
+      if (window.CE2) {
+        sendViewedMarketingPage();
+      } else {
+        window.CE_READY = function() {
+          sendViewedMarketingPage();
+        }
+      }
+    } else {
+      sendViewedMarketingPage();
+    }
+  }, window._GDPR2.ANALYTICS);
+</script>
+
+<script type="text/javascript">
+  window._GDPR2.registerScript('viewed_marketing_page_raw', function () {
+    var sendViewedMarketingPageRaw = function() {
+      if ("production".match(/test|e2e/i)) {
+        return;
+      }
+
+      var metricsUrl = "https://metrics.crazyegg.com" + "/api/metrics";
+      var payload = {
+        metric: "viewed_marketing_page_raw",
+        params: {
+          anonymous_id: CE_VISITOR_ID,
+          path: window.location.pathname
+        }
+      }
+
+      fetch(metricsUrl, {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json"},
+        body: JSON.stringify(payload)
+      })
+    }
+
+    sendViewedMarketingPageRaw();
+  }, window._GDPR2.ANALYTICS);
+</script>
+
+</head>
+<body class="cen-page-landing">
+
+<header id="js-cen-header" class="cen-header" data-controller="enterprise-contact">
+  <section class="cen-row cen-header__row">
+    <a class="cen-logo cen-logo--header" href="/">
+<img alt="Crazy Egg" class="cen-image" height="64" src="https://w3-assets.crazyeggcdn.com/images/svg/logo-ce-main-7a33448ad5d077c647dea989e989a1b0.svg?vsn=d" width="120">
+    </a>
+<nav class="cen-header__right-col" role="navigation" aria-label="check solutions using crazy egg or request enterprise demo or login to crazy egg application">
+  <ul class="cen-header__nav-list--desktop" data-controller="nav-dropdown">
+    <li class="cen-header__nav-item">
+      <button class="ce-btn cen-btn--transparent-text-black cen-header__nav-btn " aria-haspopup="true" aria-expanded="false" data-nav-dropdown="dropdownBtn" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut click->nav-dropdown#toggleClass" data-nav-dropdown-link="product">
+        Product
+        <div class="cen-header__nav-btn--icon-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <path
+              d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+            ></path>
+          </svg>
+        </div>
+      </button>
+      <div class="cen-header__nav-dropdown-list--wrapper" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut">
+        <div class="cen-header__nav-dropdown-list--large">
+          <div class="cen-header__nav-dropdown-item--large">
+            <h4 class="cen-header__nav-dropdown-item-header">
+              <div class="cen-header__nav-dropdown-item-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M0 46.9h60v7.5H0V46.9zM7.5 31.9H15v11.2H7.5V31.9zM18.8 16.9h7.5v26.2h-7.5V16.9zM30 28.1h7.5v15H30V28.1zM41.2 5.6h7.5v37.5h-7.5V5.6z"/></svg>
+</div>
+              Analysis
+            </h4>
+            <ul role="submenu">
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/heatmaps" role="submenuitem">Heatmap Reports</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/recordings" role="submenuitem">Session Recordings</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/errors-tracking" role="submenuitem">Errors Tracking</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cen-header__nav-dropdown-item--large">
+            <h4 class="cen-header__nav-dropdown-item-header">
+              <div class="cen-header__nav-dropdown-item-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M33.4 55.4c1.3 0 2.3 1 2.3 2.3 0 1.3-1 2.3-2.3 2.3h-6.8c-1.3 0-2.3-1-2.3-2.3 0-1.3 1-2.3 2.3-2.3H33.4zM36.4 50c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3H23.6c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3H36.4zM30 13.8c9.3 0 16.8 7.5 16.8 16.8 0 8-8.3 17.4-8.7 17.8 -0.4 0.5-1.1 0.8-1.7 0.8H23.6c-0.7 0-1.3-0.3-1.8-0.8 -0.9-1-8.6-10.4-8.6-17.7C13.2 21.4 20.7 13.8 30 13.8zM31.7 39.8h-3.4l1.7 6L31.7 39.8zM30 18.5c-6.7 0-12.2 5.5-12.2 12.2 0 4.4 4.5 10.9 6.9 13.9l0.9 0 -1.7-6.2c-0.2-0.6 0-1.2 0.3-1.7 0.4-0.5 0.9-0.8 1.5-0.8h8.5c0.6 0 1.2 0.3 1.5 0.8 0.4 0.5 0.5 1.1 0.3 1.7l-1.7 6.2 1 0c2.4-2.9 6.8-9.2 6.8-13.9C42.2 23.9 36.7 18.5 30 18.5zM6.1 18.5l4.6 1.5c1.2 0.4 1.9 1.7 1.5 2.9 -0.3 1-1.2 1.6-2.2 1.6 -0.2 0-0.5 0-0.7-0.1l-4.6-1.5c-1.2-0.4-1.9-1.7-1.5-2.9C3.5 18.8 4.8 18.1 6.1 18.5zM56.9 20c0.4 1.2-0.3 2.5-1.5 2.9l-4.6 1.5c-0.2 0.1-0.5 0.1-0.7 0.1 -1 0-1.9-0.6-2.2-1.6 -0.4-1.2 0.3-2.5 1.5-2.9l4.6-1.5C55.2 18.1 56.5 18.8 56.9 20zM49.5 6.5c0.9 0.9 0.9 2.4 0 3.3l-3.4 3.4c-0.5 0.5-1 0.7-1.6 0.7 -0.6 0-1.2-0.2-1.6-0.7 -0.9-0.9-0.9-2.4 0-3.3l3.4-3.4C47.2 5.6 48.6 5.6 49.5 6.5zM13.8 6.5l3.4 3.4c0.9 0.9 0.9 2.4 0 3.3 -0.5 0.5-1 0.7-1.6 0.7 -0.6 0-1.2-0.2-1.6-0.7l-3.4-3.4c-0.9-0.9-0.9-2.4 0-3.3C11.5 5.6 12.9 5.6 13.8 6.5zM30 0c1.3 0 2.3 1 2.3 2.3v4.8c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3V2.3C27.7 1 28.7 0 30 0z"/></svg>
+</div>
+              Experimentation
+            </h4>
+            <ul role="submenu">
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/ab-testing" role="submenuitem">A/B Testing</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/funnels" role="submenuitem">Conversion Funnels</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/ctas" role="submenuitem">Popup CTAs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cen-header__nav-dropdown-item--large">
+            <h4 class="cen-header__nav-dropdown-item-header">
+              <div class="cen-header__nav-dropdown-item-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M45.5 0.1c2.7 0 4.9 2.1 5.1 4.7l0 0.4v19.2c0 1.3-1.1 2.4-2.4 2.4 -1.2 0-2.3-0.9-2.4-2.1l0-0.3V5.3c0-0.1-0.1-0.2-0.2-0.3l-0.1 0H5.1C5 5 4.9 5.1 4.9 5.2l0 0.1v49.4c0 0.1 0.1 0.2 0.2 0.3l0.1 0h21.1c1.3 0 2.4 1.1 2.4 2.4 0 1.2-0.9 2.3-2.1 2.4l-0.3 0H5.1c-2.7 0-4.9-2.1-5.1-4.7l0-0.4V5.3c0-2.7 2.1-4.9 4.7-5.2l0.4 0H45.5zM58.6 31.2c1.4 0.8 1.8 2.6 0.9 4L45.1 58.4c-0.5 0.8-1.4 1.3-2.3 1.4 0 0-0.1 0-0.1 0 -0.9 0-1.8-0.4-2.3-1.1L33 48.8c-1-1.3-0.7-3.1 0.6-4 1.3-1 3.1-0.7 4 0.6l4.9 6.4 12.2-19.6C55.5 30.8 57.3 30.4 58.6 31.2zM23.8 37c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0h-9.1c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H23.8zM36.1 24.8c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0H14.5c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H36.1zM36.1 14.2c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0H14.5c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H36.1z"/></svg>
+</div>
+              Free Tools
+            </h4>
+            <ul role="submenu">
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  link-active" href="/web-analytics" role="submenuitem">Web Analytics</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/instant-heatmaps" role="submenuitem">Instant Heatmaps</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/conversion-analytics" role="submenuitem">Conversion Analytics</a>
+              </li>
+              <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/surveys" role="submenuitem">Surveys</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cen-header__nav-item">
+      <button class="ce-btn cen-btn--transparent-text-black cen-header__nav-btn" aria-haspopup="true" aria-expanded="false" data-nav-dropdown="dropdownBtn" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut click->nav-dropdown#toggleClass" data-nav-dropdown-link="customers">
+        Customers
+        <div class="cen-header__nav-btn--icon-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <path
+              d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+            ></path>
+          </svg>
+        </div>
+      </button>
+      <div class="cen-header__nav-dropdown-list--wrapper" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut">
+        <ul class="cen-header__nav-dropdown-list" role="submenu">
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/case-studies" role="submenuitem">Case Studies</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/agencies" role="submenuitem">Agencies</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/ecommerce" role="submenuitem">E-Commerce</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/lead-gen" role="submenuitem">Lead Gen</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/education" role="submenuitem">Education</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/shopify" role="submenuitem">Shopify</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/enterprise" role="submenuitem">Enterprise</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="cen-header__nav-item">
+      <button class="ce-btn cen-btn--transparent-text-black cen-header__nav-btn" aria-haspopup="true" aria-expanded="false" data-nav-dropdown="dropdownBtn" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut click->nav-dropdown#toggleClass" data-nav-dropdown-link="resources">
+        Resources
+        <div class="cen-header__nav-btn--icon-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+            role="presentation"
+            aria-hidden="true"
+          >
+            <path
+              d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+            ></path>
+          </svg>
+        </div>
+      </button>
+      <div class="cen-header__nav-dropdown-list--wrapper" data-action="mouseover->nav-dropdown#mouseOver mouseout->nav-dropdown#mouseOut">
+        <ul class="cen-header__nav-dropdown-list" role="submenu">
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/pricing" role="submenuitem">Pricing</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+            <a class="cen-header__nav-dropdown-link" href="/blog/" alt="Resources - Blog" role="submenuitem">
+              Blog
+            </a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/faq" role="submenuitem">FAQ</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+            <a href="https://support.crazyegg.com/" class="cen-header__nav-dropdown-link" target="_blank" rel="noopener noreferrer" role="submenuitem">
+              Help Center
+            </a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link  " href="/terms" role="submenuitem">Terms of Use</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link " href="/privacy" role="submenuitem">Privacy</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link " href="/about-us" role="submenuitem">About Us</a>
+          </li>
+          <li class="cen-header__nav-dropdown-item">
+<a class="cen-header__nav-dropdown-link " href="/careers" role="submenuitem">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="cen-header__nav-item">
+      <a href="https://auth.app.crazyegg.com/login" class="ce-btn cen-btn--large cen-btn--transparent-text-black">Log In</a>
+      <input type="hidden" id="is_pricing" name="is_pricing" value="0" data-enterprise-contact-target="is_pricing">
+    </li>
+    <li class="cen-u-gmargin-l-10">
+      <button data-action="click->enterprise-contact#showModal" data-target="enterprise-contact.button"
+      class="ce-btn cen-btn--white--outline cen-btn--large">
+        Contact Sales
+      </button>
+    </li>
+    <li class="cen-u-gmargin-l-10">
+      <a href="/signup" class="ce-btn cen-btn--large ">Sign Up</a>
+    </li>
+  </ul>
+</nav>
+
+  </section>
+<div data-controller="nav-mob-solutions-dropdown">
+  <div id="js-cen-mobile-top__fixed-nav" class="cen-mobile-top__fixed-nav">
+    <button class="cen-btn cen-btn--white cen-mobile-top__btn-interaction" data-action="click->nav-mob-solutions-dropdown#showMenu" aria-haspopup="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M56.5 47.3c2 0 3.6 1.6 3.6 3.6s-1.6 3.6-3.6 3.6H3.7c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6H56.5zM56.5 26.4c2 0 3.6 1.6 3.6 3.6s-1.6 3.6-3.6 3.6H3.7c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6H56.5zM56.5 5.5c2 0 3.6 1.6 3.6 3.6s-1.6 3.6-3.6 3.6H3.7c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6H56.5z"/></svg>
+
+      <span class="visuallyhidden" data-nav-mob-solutions-dropdown-target="menuBtn">Open menu</span>
+    </button>
+  </div>
+  <div class="cen-mobile-top__content-wrapper" data-nav-mob-solutions-dropdown-target="contentWrapper">
+    <div class="cen-mobile-top__content-header">
+<img alt="Crazy Egg" src="https://w3-assets.crazyeggcdn.com/images/svg/logo-ce-main-7a33448ad5d077c647dea989e989a1b0.svg?vsn=d">
+      <button class="cen-mobile-top__btn-interaction" data-action="click->nav-mob-solutions-dropdown#hideMenu">
+        <div class="cen-mobile-top__btn-close-wrapper">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M58.5 1.5c2 2 2 5.2 0 7.1L37.1 30l21.4 21.4c2 2 2 5.2 0 7.1 -2 2-5.2 2-7.1 0L30 37.1 8.6 58.5c-2 2-5.2 2-7.1 0 -2-2-2-5.2 0-7.1L22.9 30 1.5 8.6c-2-2-2-5.2 0-7.1s5.2-2 7.1 0L30 22.9 51.4 1.5C53.4-0.5 56.6-0.5 58.5 1.5z"/></svg>
+
+        </div>
+        <span class="visuallyhidden">Close menu</span>
+      </button>
+    </div>
+    <ul class="cen-mobile-top__content-list">
+      <li class="cen-mobile-top__content-item">
+        <button class="cen-mobile-top__content-btn cen-mobile-top__content-btn--flex cen-mobile-top__content-btn--black" aria-haspopup="true" aria-expanded="false" data-nav-mob-solutions-dropdown-target="dropdownBtn" data-action=" click->nav-mob-solutions-dropdown#toggleClass">
+          Product
+          <div class="cen-mobile-top__content-btn--icon-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <path
+                d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <div class="cen-mobile-top__content-dropdown-list">
+          <div class="cen-mobile-top__content-dropdown-wrapper">
+            <h4 class="cen-mobile-top__content-dropdown-header">
+              <div class="cen-mobile-top__content-dropdown-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M33.4 55.4c1.3 0 2.3 1 2.3 2.3 0 1.3-1 2.3-2.3 2.3h-6.8c-1.3 0-2.3-1-2.3-2.3 0-1.3 1-2.3 2.3-2.3H33.4zM36.4 50c1.3 0 2.3 1 2.3 2.3s-1 2.3-2.3 2.3H23.6c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3H36.4zM30 13.8c9.3 0 16.8 7.5 16.8 16.8 0 8-8.3 17.4-8.7 17.8 -0.4 0.5-1.1 0.8-1.7 0.8H23.6c-0.7 0-1.3-0.3-1.8-0.8 -0.9-1-8.6-10.4-8.6-17.7C13.2 21.4 20.7 13.8 30 13.8zM31.7 39.8h-3.4l1.7 6L31.7 39.8zM30 18.5c-6.7 0-12.2 5.5-12.2 12.2 0 4.4 4.5 10.9 6.9 13.9l0.9 0 -1.7-6.2c-0.2-0.6 0-1.2 0.3-1.7 0.4-0.5 0.9-0.8 1.5-0.8h8.5c0.6 0 1.2 0.3 1.5 0.8 0.4 0.5 0.5 1.1 0.3 1.7l-1.7 6.2 1 0c2.4-2.9 6.8-9.2 6.8-13.9C42.2 23.9 36.7 18.5 30 18.5zM6.1 18.5l4.6 1.5c1.2 0.4 1.9 1.7 1.5 2.9 -0.3 1-1.2 1.6-2.2 1.6 -0.2 0-0.5 0-0.7-0.1l-4.6-1.5c-1.2-0.4-1.9-1.7-1.5-2.9C3.5 18.8 4.8 18.1 6.1 18.5zM56.9 20c0.4 1.2-0.3 2.5-1.5 2.9l-4.6 1.5c-0.2 0.1-0.5 0.1-0.7 0.1 -1 0-1.9-0.6-2.2-1.6 -0.4-1.2 0.3-2.5 1.5-2.9l4.6-1.5C55.2 18.1 56.5 18.8 56.9 20zM49.5 6.5c0.9 0.9 0.9 2.4 0 3.3l-3.4 3.4c-0.5 0.5-1 0.7-1.6 0.7 -0.6 0-1.2-0.2-1.6-0.7 -0.9-0.9-0.9-2.4 0-3.3l3.4-3.4C47.2 5.6 48.6 5.6 49.5 6.5zM13.8 6.5l3.4 3.4c0.9 0.9 0.9 2.4 0 3.3 -0.5 0.5-1 0.7-1.6 0.7 -0.6 0-1.2-0.2-1.6-0.7l-3.4-3.4c-0.9-0.9-0.9-2.4 0-3.3C11.5 5.6 12.9 5.6 13.8 6.5zM30 0c1.3 0 2.3 1 2.3 2.3v4.8c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3V2.3C27.7 1 28.7 0 30 0z"/></svg>
+</div>
+              Behavior
+            </h4>
+            <ul role="submenu">
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/heatmaps" role="submenuitem">Heatmap Reports</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/recordings" role="submenuitem">Session Recordings</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/surveys" role="submenuitem">Surveys</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cen-mobile-top__content-dropdown-wrapper">
+            <h4 class="cen-mobile-top__content-dropdown-header">
+              <div class="cen-mobile-top__content-dropdown-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M0 46.9h60v7.5H0V46.9zM7.5 31.9H15v11.2H7.5V31.9zM18.8 16.9h7.5v26.2h-7.5V16.9zM30 28.1h7.5v15H30V28.1zM41.2 5.6h7.5v37.5h-7.5V5.6z"/></svg>
+</div>
+              Analytics
+            </h4>
+            <ul role="submenu">
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link link-active" href="/web-analytics" role="submenuitem">Web Analytics</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/instant-heatmaps" role="submenuitem">Instant Heatmaps</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/conversion-analytics" role="submenuitem">Conversion Analytics</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/errors-tracking" role="submenuitem">Errors Tracking</a>
+              </li>
+            </ul>
+          </div>
+          <div class="cen-mobile-top__content-dropdown-wrapper">
+            <h4 class="cen-mobile-top__content-dropdown-header">
+              <div class="cen-mobile-top__content-dropdown-header-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M45.5 0.1c2.7 0 4.9 2.1 5.1 4.7l0 0.4v19.2c0 1.3-1.1 2.4-2.4 2.4 -1.2 0-2.3-0.9-2.4-2.1l0-0.3V5.3c0-0.1-0.1-0.2-0.2-0.3l-0.1 0H5.1C5 5 4.9 5.1 4.9 5.2l0 0.1v49.4c0 0.1 0.1 0.2 0.2 0.3l0.1 0h21.1c1.3 0 2.4 1.1 2.4 2.4 0 1.2-0.9 2.3-2.1 2.4l-0.3 0H5.1c-2.7 0-4.9-2.1-5.1-4.7l0-0.4V5.3c0-2.7 2.1-4.9 4.7-5.2l0.4 0H45.5zM58.6 31.2c1.4 0.8 1.8 2.6 0.9 4L45.1 58.4c-0.5 0.8-1.4 1.3-2.3 1.4 0 0-0.1 0-0.1 0 -0.9 0-1.8-0.4-2.3-1.1L33 48.8c-1-1.3-0.7-3.1 0.6-4 1.3-1 3.1-0.7 4 0.6l4.9 6.4 12.2-19.6C55.5 30.8 57.3 30.4 58.6 31.2zM23.8 37c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0h-9.1c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H23.8zM36.1 24.8c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0H14.5c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H36.1zM36.1 14.2c1.2 0 2.1 1 2.1 2.1 0 1.1-0.8 2-1.8 2.1l-0.3 0H14.5c-1.2 0-2.1-1-2.1-2.1 0-1.1 0.8-2 1.8-2.1l0.3 0H36.1z"/></svg>
+</div>
+              Experimentation
+            </h4>
+            <ul role="submenu">
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/ab-testing" role="submenuitem">A/B Testing</a>
+              </li>
+              <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/ctas" role="submenuitem">Popup CTAs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="cen-mobile-top__content-item">
+        <button class="cen-mobile-top__content-btn cen-mobile-top__content-btn--flex cen-mobile-top__content-btn--black" aria-haspopup="true" aria-expanded="false" data-nav-mob-solutions-dropdown-target="dropdownBtn" data-action=" click->nav-mob-solutions-dropdown#toggleClass">
+          Customers
+          <div class="cen-mobile-top__content-btn--icon-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <path
+                d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <ul class="cen-mobile-top__content-dropdown-list" role="submenu">
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/case-studies" role="submenuitem">Case Studies</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/agencies" role="submenuitem">Agencies</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/ecommerce" role="submenuitem">E-Commerce</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/lead-gen" role="submenuitem">Lead Gen</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/education" role="submenuitem">Education</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/shopify" role="submenuitem">Shopify</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/enterprise" role="submenuitem">Enterprise</a>
+          </li>
+        </ul>
+      </li>
+      <li class="cen-mobile-top__content-item">
+        <button class="cen-mobile-top__content-btn cen-mobile-top__content-btn--flex cen-mobile-top__content-btn--black" aria-haspopup="true" aria-expanded="false" data-nav-mob-solutions-dropdown-target="dropdownBtn" data-action=" click->nav-mob-solutions-dropdown#toggleClass">
+          Resources
+          <div class="cen-mobile-top__content-btn--icon-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60"
+              role="presentation"
+              aria-hidden="true"
+            >
+              <path
+                d="M58.5 45.9c-2.1 2.1-5.2 2.6-8.2 0L30.1 26.3 10 45.4c-2.6 2.6-5.7 2.1-8.2 0s-2.1-6.2 0-8.2S26 13.9 26 13.9c1-1 2.6-1.5 4.1-1.5 1.5 0 3.1.5 4.1 1.5 0 0 22.2 21.1 24.2 23.2 2.1 2.6 2.1 6.2.1 8.8z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        <ul class="cen-mobile-top__content-dropdown-list" role="submenu">
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/pricing" role="submenuitem">Pricing</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+            <a class="cen-mobile-top__content-dropdown-link" href="/blog/" alt="Resources - Blog" role="submenuitem">
+              Blog
+            </a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/faq" role="submenuitem">FAQ</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/terms" role="submenuitem">Terms of Use</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/privacy" role="submenuitem">Privacy</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/about-us" role="submenuitem">About Us</a>
+          </li>
+          <li class="cen-mobile-top__content-dropdown-item">
+<a class="cen-mobile-top__content-dropdown-link " href="/careers" role="submenuitem">Careers</a>
+          </li>
+        </ul>
+      </li>
+      <li class="cen-mobile-top__content-item">
+        <a href="https://auth.app.crazyegg.com/login" class="cen-mobile-top__content-btn cen-u-text-black-pearl-500">Log In</a>
+      </li>
+    </ul>
+    <div class="cen-mobile-top__footer">
+      <button data-action="click->enterprise-contact#showModal click->nav-mob-solutions-dropdown#hideMenuOpenModal" data-target="enterprise-contact.button" class="ce-btn cen-mobile-top__btn">
+        Contact Sales
+      </button>
+      <div>
+<a class="cen-mobile-top__content-btn cen-mobile-top__content-btn--blue" href="/signup/password">Sign Up Free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cen-enterprise-modal__wrapper" id="enterprise_contact_modal" style="display: none;" data-enterprise-contact-target="modal" role="dialog" aria-labelledby="enterpriseDialog" >
+  <div class="cen-enterprise-modal__modal">
+    <button class="cen-enterprise-modal__modal-close-btn" data-action="click->enterprise-contact#hideModal">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M58.5 1.5c2 2 2 5.2 0 7.1L37.1 30l21.4 21.4c2 2 2 5.2 0 7.1 -2 2-5.2 2-7.1 0L30 37.1 8.6 58.5c-2 2-5.2 2-7.1 0 -2-2-2-5.2 0-7.1L22.9 30 1.5 8.6c-2-2-2-5.2 0-7.1s5.2-2 7.1 0L30 22.9 51.4 1.5C53.4-0.5 56.6-0.5 58.5 1.5z"/></svg>
+
+      <span class="visuallyhidden">Close modal</span>
+    </button>
+
+    <div data-enterprise-contact-target="modalForm">
+      <header class="ce-pop-up-modal__header">
+        <div class="cen-enterprise-modal__header-content cen-enterprise-modal__header-content--1-col">
+          <div class="cen-enterprise-modal__badges">
+<img alt="G2 Best Est. ROI - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/BestEstimatedROI_Roi-Winter-2025-c186f3a2e79a30a0d695863bbe10e4ee.svg?vsn=d">
+<img alt="G2 Best meets requirements mid-market - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/BestMeetsRequirements_Mid-Market_MeetsRequirements-Winter-2025-bbc6f6c8b2eeb9b5ebeaaf5efb99b443.svg?vsn=d">
+<img alt="G2 Fastest implementation small business - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/FastestImplementation_Small-Business_GoLiveTime-Winter-2025-f05d20844385de8e091f6813f6c7ec0b.svg?vsn=d">
+<img alt="G2 Leader mid-market - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/Leader_Mid-Market_Leader-Winter-2025-dad05aa9e4259584c16062893698d4f0.svg?vsn=d">
+          </div>
+          <h3 id="enterpriseDialog" class="cen-heading-3 cen-u-gmargin-b-0 ce-u--g-margin-top-10 ce-pop-up-modal__badges--heading-1-col">
+            Request a personalized<br/> demo of Crazy Egg
+          </h3>
+        </div>
+      </header>
+
+      <section class="cen-enterprise-modal__content">
+        <div class="new-enterprise-contact">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "46540628",
+              formId: "6680dde4-d88b-455f-8eab-11e49ec8429f"
+            });
+          </script>
+          <script>
+            window.addEventListener("message", function(event) {
+              if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted' && event.data.id === "6680dde4-d88b-455f-8eab-11e49ec8429f") {
+                window.dataLayer.push({
+                  'event': 'HubSpot-Form-Submit-Success',
+                  'hs-form-guid': event.data.id
+                });
+              }
+            });
+          </script>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</section>
+
+</header>
+
+
+  <main role="main">
+<div data-controller="surveys-page">
+    <div class="cen-surveys">
+        <section class="cen-row--hero-wrapper-no-border">
+            <div class="cen-row--regular">
+                <div class="cen-web-analytics__hero--left" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1 class="conv-analytics__hero-heading cen-u-gtext-left" style="text-align: center;">CPC Calculator</h1>
+                    <p class="cen-text cen-u-mmargin-b-25-dmargin-b-40 cen-u-text-d-size-20 cen-u-gtext-left" style="text-align: center;">Calculate your Cost Per Click (CPC) instantly with support for 15+ global currencies.</p>
+
+                    <div class="cpc-calculator" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 40px; border-radius: 16px; margin: 30px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid #e8f5e8;">
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="currency-selector" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Select Currency</label>
+                            <select id="currency-selector" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%232c3e50%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; background-position: right 15px center; background-size: 12px; padding-right: 40px;">
+                                <option value="USD">US Dollar (USD) - $</option>
+                                <option value="EUR">Euro (EUR) - €</option>
+                                <option value="GBP">British Pound (GBP) - £</option>
+                                <option value="JPY">Japanese Yen (JPY) - ¥</option>
+                                <option value="AUD">Australian Dollar (AUD) - A$</option>
+                                <option value="CAD">Canadian Dollar (CAD) - C$</option>
+                                <option value="CHF">Swiss Franc (CHF) - CHF</option>
+                                <option value="CNY">Chinese Yuan (CNY) - ¥</option>
+                                <option value="INR">Indian Rupee (INR) - ₹</option>
+                                <option value="SGD">Singapore Dollar (SGD) - S$</option>
+                                <option value="BRL">Brazilian Real (BRL) - R$</option>
+                                <option value="ZAR">South African Rand (ZAR) - R</option>
+                                <option value="SEK">Swedish Krona (SEK) - kr</option>
+                                <option value="NZD">New Zealand Dollar (NZD) - NZ$</option>
+                                <option value="MXN">Mexican Peso (MXN) - $</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 25px;">
+                            <label for="total-cost" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Total Ad Spend</label>
+                            <div style="position: relative;">
+<span id="currency-symbol" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #6c757d; font-weight: 600;">$</span>
+                                <input type="number" id="total-cost" placeholder="0.00" min="0" step="0.01" style="width: 100%; padding: 16px 20px 16px 35px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;" oninput="calculateCPC()">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <label for="total-clicks" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;">Total Clicks</label>
+                            <input type="number" id="total-clicks" placeholder="0" min="1" step="1" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: 'Proxima Nova Soft', proxima-nova-soft, sans-serif;" oninput="calculateCPC()">
+                        </div>
+                        
+                        <div id="result-container" style="margin-top: 35px; display: none;">
+                            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 25px; border-radius: 12px; border: 2px solid #8abc00; box-shadow: 0 5px 20px rgba(138, 188, 0, 0.1);">
+                                <div style="text-align: center; margin-bottom: 15px;">
+                                    <div style="font-size: 14px; color: #6c757d; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Your Cost Per Click (CPC)</div>
+                                    <div id="cpc-result" style="font-size: 36px; font-weight: 700; color: #2c3e50; line-height: 1.2;">-</div>
+                                    <div id="benchmark-text" style="font-size: 14px; color: #8abc00; margin-top: 10px; font-weight: 600;"></div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-top: 20px; border-top: 1px solid #e9ecef; padding-top: 15px;">
+                                    <div style="text-align: center; flex: 1;">
+                                        <div style="font-size: 12px; color: #6c757d; margin-bottom: 5px;">Total Cost</div>
+                                        <div id="formatted-total-cost" style="font-weight: 600; color: #2c3e50;">-</div>
+                                    </div>
+                                    <div style="text-align: center; flex: 1; border-left: 1px solid #e9ecef; border-right: 1px solid #e9ecef;">
+                                        <div style="font-size: 12px; color: #6c757d; margin-bottom: 5px;">Total Clicks</div>
+                                        <div id="formatted-total-clicks" style="font-weight: 600; color: #2c3e50;">-</div>
+                                    </div>
+                                    <div style="text-align: center; flex: 1;">
+                                        <div style="font-size: 12px; color: #6c757d; margin-bottom: 5px;">CPC</div>
+                                        <div id="formatted-cpc" style="font-weight: 600; color: #2c3e50;">-</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 25px; background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #8abc00;">
+                                <div style="display: flex; align-items: flex-start;">
+                                    <div style="margin-right: 12px; color: #8abc00; font-size: 18px;">💡</div>
+                                    <div>
+                                        <div style="font-weight: 600; margin-bottom: 5px; color: #2c3e50;">CPC Calculation</div>
+                                        <div style="font-size: 14px; color: #6c757d; line-height: 1.5;">
+                                            CPC = Total Cost ÷ Total Clicks
+                                            <br><span id="calculation-details" style="font-family: monospace; background: #e9ecef; padding: 2px 5px; border-radius: 3px; display: inline-block; margin-top: 5px;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <style>
+                    .cpc-calculator input[type="number"]:focus,
+                    .cpc-calculator select:focus {
+                        outline: none;
+                        border-color: #8abc00;
+                        box-shadow: 0 0 0 3px rgba(138, 188, 0, 0.1);
+                    }
+                    .cpc-calculator button:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 6px 20px rgba(138, 188, 0, 0.4);
+                    }
+                    .cpc-calculator button:active {
+                        transform: translateY(0);
+                    }
+                    #currency-selector:focus {
+                        outline: none;
+                        border-color: #8abc00;
+                        box-shadow: 0 0 0 3px rgba(138, 188, 0, 0.1);
+                    }
+                    </style>
+                    
+                    <script>
+                    // Currency data with formatting information and benchmarks
+                    const currencies = {
+                        USD: { symbol: '$', code: 'USD', name: 'US Dollar', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: '$0.50 - $2.00' },
+                        EUR: { symbol: '€', code: 'EUR', name: 'Euro', position: 'before', decimal: 2, thousand: '.', decimalPoint: ',', benchmark: '€0.45 - €1.80' },
+                        GBP: { symbol: '£', code: 'GBP', name: 'British Pound', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: '£0.40 - £1.60' },
+                        JPY: { symbol: '¥', code: 'JPY', name: 'Japanese Yen', position: 'before', decimal: 0, thousand: ',', decimalPoint: '.', benchmark: '¥50 - ¥200' },
+                        AUD: { symbol: 'A$', code: 'AUD', name: 'Australian Dollar', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: 'A$0.70 - A$2.50' },
+                        CAD: { symbol: 'C$', code: 'CAD', name: 'Canadian Dollar', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: 'C$0.65 - C$2.50' },
+                        CHF: { symbol: 'CHF', code: 'CHF', name: 'Swiss Franc', position: 'after', decimal: 2, thousand: '\'', decimalPoint: '.', benchmark: 'CHF 0.50 - CHF 2.00' },
+                        CNY: { symbol: '¥', code: 'CNY', name: 'Chinese Yuan', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: '¥3.00 - ¥12.00' },
+                        INR: { symbol: '₹', code: 'INR', name: 'Indian Rupee', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: '₹20 - ₹100' },
+                        SGD: { symbol: 'S$', code: 'SGD', name: 'Singapore Dollar', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: 'S$0.70 - S$2.50' },
+                        BRL: { symbol: 'R$', code: 'BRL', name: 'Brazilian Real', position: 'before', decimal: 2, thousand: '.', decimalPoint: ',', benchmark: 'R$2.00 - R$8.00' },
+                        ZAR: { symbol: 'R', code: 'ZAR', name: 'South African Rand', position: 'before', decimal: 2, thousand: ' ', decimalPoint: '.', benchmark: 'R5.00 - R20.00' },
+                        SEK: { symbol: 'kr', code: 'SEK', name: 'Swedish Krona', position: 'after', decimal: 2, thousand: ' ', decimalPoint: ',', benchmark: 'kr 4.00 - kr 16.00' },
+                        NZD: { symbol: 'NZ$', code: 'NZD', name: 'New Zealand Dollar', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: 'NZ$0.75 - NZ$3.00' },
+                        MXN: { symbol: '$', code: 'MXN', name: 'Mexican Peso', position: 'before', decimal: 2, thousand: ',', decimalPoint: '.', benchmark: '$10.00 - $40.00' }
+                    };
+
+                    // DOM Elements
+                    const currencySelector = document.getElementById('currency-selector');
+                    const currencySymbol = document.getElementById('currency-symbol');
+                    const totalCostInput = document.getElementById('total-cost');
+                    const totalClicksInput = document.getElementById('total-clicks');
+                    const resultContainer = document.getElementById('result-container');
+                    const cpcResult = document.getElementById('cpc-result');
+                    const benchmarkText = document.getElementById('benchmark-text');
+                    const formattedTotalCost = document.getElementById('formatted-total-cost');
+                    const formattedTotalClicks = document.getElementById('formatted-total-clicks');
+                    const formattedCpc = document.getElementById('formatted-cpc');
+                    const calculationDetails = document.getElementById('calculation-details');
+
+                    // Initialize the calculator
+                    function initCalculator() {
+                        // Load saved currency preference or detect from browser
+                        const savedCurrency = localStorage.getItem('preferredCurrency');
+                        const userCurrency = savedCurrency || detectUserCurrency();
+                        
+                        // Set the currency selector
+                        if (userCurrency && currencies[userCurrency]) {
+                            currencySelector.value = userCurrency;
+                            updateCurrencySymbol(userCurrency);
+                        }
+                        
+                        // Add event listeners
+                        currencySelector.addEventListener('change', handleCurrencyChange);
+                        totalCostInput.addEventListener('input', calculateCPC);
+                        totalClicksInput.addEventListener('input', calculateCPC);
+                        
+                        // Initial calculation if there are values
+                        calculateCPC();
+                    }
+
+                    // Detect user's currency based on browser language or IP
+                    function detectUserCurrency() {
+                        // Try to get from browser language first
+                        const language = navigator.language || 'en-US';
+                        const region = language.split('-')[1] || 'US';
+                        
+                        // Map of common country codes to currencies
+                        const countryToCurrency = {
+                            'US': 'USD', 'GB': 'GBP', 'JP': 'JPY', 'DE': 'EUR', 'FR': 'EUR',
+                            'IT': 'EUR', 'ES': 'EUR', 'CA': 'CAD', 'AU': 'AUD', 'IN': 'INR',
+                            'BR': 'BRL', 'MX': 'MXN', 'ZA': 'ZAR', 'SE': 'SEK', 'NZ': 'NZD',
+                            'SG': 'SGD', 'CH': 'CHF', 'CN': 'CNY'
+                        };
+                        
+                        return countryToCurrency[region] || 'USD';
+                    }
+
+                    // Handle currency change
+                    function handleCurrencyChange() {
+                        const selectedCurrency = currencySelector.value;
+                        updateCurrencySymbol(selectedCurrency);
+                        localStorage.setItem('preferredCurrency', selectedCurrency);
+                        calculateCPC();
+                    }
+
+                    // Update currency symbol in the UI
+                    function updateCurrencySymbol(currencyCode) {
+                        const currency = currencies[currencyCode];
+                        if (currency) {
+                            currencySymbol.textContent = currency.symbol;
+                            benchmarkText.textContent = `Industry benchmark: ${currency.benchmark} per click`;
+                        }
+                    }
+
+                    // Format number based on currency settings
+                    function formatCurrency(amount, currencyCode) {
+                        const currency = currencies[currencyCode] || currencies['USD'];
+                        let formatted = parseFloat(amount).toFixed(currency.decimal);
+                        
+                        // Add thousand separators
+                        if (currency.thousand) {
+                            const parts = formatted.split('.');
+                            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, currency.thousand);
+                            formatted = parts.join(currency.decimalPoint);
+                        }
+                        
+                        return formatted;
+                    }
+
+                    // Calculate CPC
+                    function calculateCPC() {
+                        const totalCost = parseFloat(totalCostInput.value) || 0;
+                        const totalClicks = parseInt(totalClicksInput.value) || 0;
+                        const selectedCurrency = currencySelector.value;
+                        const currency = currencies[selectedCurrency];
+                        
+                        // Show/hide result container
+                        if (totalCost > 0 && totalClicks > 0) {
+                            resultContainer.style.display = 'block';
+                            
+                            // Calculate CPC
+                            const cpc = totalCost / totalClicks;
+                            
+                            // Format values
+                            const formattedCost = formatCurrency(totalCost, selectedCurrency);
+                            const formattedCPC = formatCurrency(cpc, selectedCurrency);
+                            
+                            // Update UI
+                            cpcResult.textContent = `${currency.position === 'before' ? currency.symbol : ''}${formattedCPC}${currency.position === 'after' ? ' ' + currency.symbol : ''}`;
+                            formattedTotalCost.textContent = `${currency.position === 'before' ? currency.symbol : ''}${formattedCost}${currency.position === 'after' ? ' ' + currency.symbol : ''}`;
+                            formattedTotalClicks.textContent = totalClicks.toLocaleString();
+                            formattedCpc.textContent = `${currency.position === 'before' ? currency.symbol : ''}${formattedCPC}${currency.position === 'after' ? ' ' + currency.symbol : ' ' + currency.code}`;
+                            
+                            // Update calculation details
+                            calculationDetails.textContent = `${totalCost} ÷ ${totalClicks} = ${cpc.toFixed(2)} ${currency.code}`;
+                            
+                            // Update benchmark text
+                            benchmarkText.textContent = `Industry benchmark: ${currency.benchmark} per click`;
+                        } else {
+                            resultContainer.style.display = 'none';
+                        }
+                    }
+
+                    // Initialize the calculator when the DOM is loaded
+                    document.addEventListener('DOMContentLoaded', initCalculator);
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <section class="cen-footer__block-hero">
+            <div class="cen-row cen-u-row-mobile">
+            <div class="cen-col__one-center--no-pd-b cen-col__one-center--no-pd-t cen-u-gtext-center">
+                <h2 class="cen-heading-2 cen-u-gmargin-b-60">Crazy Egg is trusted by over 436,000 websites</h2>
+            </div>
+<img alt="Featured companies and marketers that trust Crazy Egg" class="cen-image cen-image--td" src="https://w3-assets.crazyeggcdn.com/images/png/img-logos-6cf2d616c282bbb9c5d8dfea810785b8.png?vsn=d">
+<img alt="Featured companies and marketers that trust Crazy Egg" class="cen-image cen-image--m" src="https://w3-assets.crazyeggcdn.com/images/png/img-logos-mob-5498e4b8b0a896e8aeb55e0b652d8959.png?vsn=d">
+            </div>
+        </section>
+
+        <div class="cen-u-gpadding-t-100 cen-u-gmargin-b-100" id="whats-included">
+        <section class="cen-row cen-u-row-mobile">
+            <div class="cen-u-gtext-center cen-u-mmargin-b-40-dmargin-b-80">
+            <h2 class="cen-heading-1">Calculate Your Cost Per Click in Seconds</h2>
+            </div>
+        </section>
+
+        <section class="cen-u-row-img-text cen-u-dmargin-b-100 cen-u-row-mobile">
+            <div class="cen-u-row-img-text--col-img cen-u-box-shadow--small cen-u-border-radius--8">
+<img alt="" class="cen-image" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-one-essential-dash-f8c2de9976012bd7467bbcc4964aceb4.png?vsn=d" width="486">
+            </div>
+            <div class="cen-u-row-img-text--col-text">
+            <h2 class="cen-heading-2">Calculate Your CPC in Any Currency</h2>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Get instant CPC calculations with support for 15+ global currencies.</p>
+            <p class="cen-text cen-u-text-g-size-18">Perfect for PPC, social media, and display advertising campaigns.</p>
+            </div>
+        </section>
+
+        <section class="cen-u-row-text-img cen-u-dmargin-b-100 cen-u-row-mobile">
+            <div class="cen-u-row-text-img--col-text">
+            <h2 class="cen-heading-2">Smart, Accurate CPC Calculations</h2>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Our calculator uses <a href="#" class="cen-link cen-link--large cen-u-display--inline" target="_blank" rel="noopener">real-time exchange rates</a> and <a href="#" class="cen-link cen-link--large cen-u-display--inline" target="_blank" rel="noopener">industry benchmarks</a> to provide accurate CPC insights.</p>
+            </div>
+
+            <div class="cen-u-row-text-img--col-img cen-u-box-shadow--small cen-u-border-radius--8">
+<img alt="" class="cen-image" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-critical-metrics-5b7c50568911e120635def77b62b0f58.png?vsn=d" width="486">
+            </div>
+        </section>
+
+        <section class="cen-u-row-img-text cen-u-dmargin-b-100 cen-u-row-mobile">
+            <div class="cen-u-row-img-text--col-img cen-u-box-shadow--small cen-u-border-radius--8">
+<img alt="" class="cen-image" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-ai-summary-5d4603d48b96c1e7d374e1a588c89030.png?vsn=d" width="486">
+            </div>
+            <div class="cen-u-row-img-text--col-text">
+            <h2 class="cen-heading-2">Make Data-Driven Advertising Decisions</h2>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-mmargin-b-10-dmargin-b-15">✨ Our <a href="#" class="cen-link cen-link--large cen-u-display--inline" target="_blank" rel="noopener">interactive calculator</a> helps you understand your advertising costs and optimize your marketing budget across different channels.</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">No more guesswork. Just accurate CPC calculations to guide your advertising strategy.</p>
+            </div>
+        </section>
+
+        <section class="cen-u-row-text-img cen-u-row-mobile">
+            <div class="cen-u-row-text-img--col-text">
+            <h2 class="cen-heading-2">Multi-Currency Support</h2>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-mmargin-b-10-dmargin-b-15">Switch between 15+ global currencies and get instant conversions. Our calculator automatically formats numbers according to local conventions.</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Perfect for international marketing campaigns and global businesses.</p>
+            </div>
+
+            <div class="cen-u-row-text-img--col-img cen-u-box-shadow--small cen-u-border-radius--8">
+<img alt="" class="cen-image" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-analyze-your-segments-87c7b8efac92380cb82e3ab17f23e9b2.png?vsn=d" width="486">
+            </div>
+        </section>
+        </div>
+
+        <div class="cen-block--bg-grey cen-u-gpadding-t-100 cen-u-gpadding-b-100 cen-u-gmargin-b-100">
+        <section class="cen-row cen-u-row-mobile">
+            <div class="cen-u-gtext-center cen-u-mmargin-b-40-dmargin-b-80">
+            <h2 class="cen-heading-1">Calculate CPC in 3 Simple Steps</h2>
+            </div>
+        </section>
+
+        <section class="cen-u-row-img-text cen-u-row-mobile">
+            <div class="cen-u-row-img-text--col-img cen-u-box-shadow--small cen-u-border-radius--16 cen-u-mmargin-b-60-dmargin-b-0">
+<img alt="" class="cen-image cen-web-analytics__hide cen-web-analytics__hide--active" data-surveys-page-target="textImage" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-set-up-in-minutes-7fd760a909bcc336560ddc57d3d4d523.png?vsn=d" width="486">
+<img alt="" class="cen-image cen-web-analytics__hide" data-surveys-page-target="textImage" height="324" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-reports-out-of-the-box-c30243154374d01f6375e1ef20cf936f.png?vsn=d" width="486">
+            </div>
+            <div class="cen-u-row-img-text--col-text cen-u-align--start">
+            <h3 class="cen-heading-3 cen-u-gmargin-b-15 cen-u-gfont-24 cen-web-analytics__header-text-clickable cen-web-analytics__header-text-clickable--active" data-surveys-page-target="textClick" data-action="click->surveys-page#showBlock" data-surveys-page-id-param="0">Accurate CPC Calculations</h3>
+            <div class="cen-web-analytics__hide cen-web-analytics__hide--active" data-surveys-page-target="textContent">
+                <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Get precise CPC calculations in just three simple steps:</p>
+                <ul class="cen-u-list-regular cen-u-text-black-pearl-500 cen-u-gmargin-b-15">
+                    <li class="cen-u-items-item">
+                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                    </span>
+                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Enter your total ad spend and number of clicks</span>
+                    </li>
+                    <li class="cen-u-items-item">
+                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                    </span>
+                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Select your preferred currency</span>
+                    </li>
+                    <li class="cen-u-items-item">
+                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                    </span>
+                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Get instant CPC calculation with industry benchmarks</span>
+                    </li>
+                </ul>
+            </div>
+                <div class="cen-block__text-with-border cen-u-gmargin-t-5">
+                    <p class="cen-u-gfont-24 cen-u-gfont-weight-semibold cen-u-font--proxima-nova-soft cen-web-analytics__header-text-clickable" data-surveys-page-target="textClick" data-action="click->surveys-page#showBlock" data-surveys-page-id-param="1">Accurate results in seconds</p>
+                    <div class="cen-web-analytics__hide" data-surveys-page-target="textContent">
+                        <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-25">No more manual calculations or currency conversions.</p>
+                        <p class="cen-text cen-u-text-g-size-18">Our calculator provides instant, accurate CPC metrics to optimize your advertising budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <div class="cen-row cen-u-gmargin-b-100 cen-u-row-mobile">
+        <div class="cen-col__two cen-col__two--w-img-b-w504-no-overflow" role="presentation">
+            <div class="cen-u-border-radius--6 cen-u-box-shadow--small">
+<img alt="" class="cen-image" height="627" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-insights-marketers-use-4b4dd64b324ce5962b05db986dd58127.png?vsn=d" width="486">
+            </div>
+        </div>
+
+        <div class="cen-col__two cen-col__two--w-text-flex">
+            <h2 class="cen-heading-2-b-big cen-u-gmargin-b-40 cen-u-mtext-center">Advertising metrics that drive real results</h2>
+            <p class="cen-text cen-text--landing-header cen-u-font--proxima-nova-soft">Precise budget allocation</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-mmargin-b-10-dmargin-b-15">Understand exactly how much you're spending per click across all your campaigns.</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-25">With support for 15+ currencies, you can track your advertising spend accurately no matter where your audience is located.</p>
+
+            <p class="cen-text cen-text--landing-header cen-u-font--proxima-nova-soft">Performance benchmarking</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-mmargin-b-10-dmargin-b-15">Compare your CPC against industry benchmarks to evaluate your campaign performance.</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-25">Our calculator provides real-time comparisons to help you identify optimization opportunities.</p>
+
+            <p class="cen-text cen-text--landing-header cen-u-font--proxima-nova-soft">Data-driven decisions</p>
+            <p class="cen-text cen-text--mb10 cen-u-text-g-size-18 cen-u-mmargin-b-10-dmargin-b-15">Make informed decisions about your advertising spend with accurate, real-time calculations.</p>
+            <p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-0">Save time on manual calculations and focus on optimizing your campaigns for better ROI.</p>
+
+        </div>
+        </div>
+
+        <div class="cen-block--bg-grey cen-u-gpadding-t-100 cen-u-gpadding-b-100">
+            <section class="cen-row cen-u-row-mobile">
+                <div class="cen-u-gtext-center cen-u-mmargin-b-40-dmargin-b-30">
+                    <h2 class="cen-heading-1">More tools to get started with Crazy Egg</h2>
+                </div>
+                <ul class="cen-col__three">
+                    <li class="cen-col__three--item">
+<img alt="" class="cen-col__three--image" height="180" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-conversion-analytics-219799c8bb19ae49ec024b7adf7297de.png?vsn=d" width="270">
+                        <div class="cen-col__three--div-wrapper">
+                            <h4 class="cen-col__three--title">Conversion Analytics</h4>
+                            <p class="cen-col__three--text cen-u-text-g-size-18">Track how many visitors are taking action on your website &ndash; and see where they're converting:</p>
+                            <ul class="cen-u-list-regular cen-u-text-black-pearl-500 cen-u-mpadding-t-15-dpadding-t-5 cen-u-gmargin-b-30">
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Button or link clicks</span>
+                                </li>
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Specific page views</span>
+                                </li>
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Form submissions</span>
+                                </li>
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Google, Meta, or TikTok ad pixels</span>
+                                </li>
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">eCommerce conversions</span>
+                                </li>
+                                <li class="cen-u-items-item">
+                                    <span class="cen-ticks-tertiary cen-ticks--blue cen-u-gmargin-t-4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M30 60c16.6 0 30-13.4 30-30S46.6 0 30 0 0 13.4 0 30 13.4 60 30 60zM24.1 44.6l-8.9-7c-1.9-1.4-2.1-4.2-0.7-6.1 1.4-1.6 4.2-2.1 6.1-0.5l5.4 4.2 12.7-17.6c1.4-1.9 4-2.3 6.1-0.9 1.9 1.4 2.3 4 0.9 6.1L30.4 44.2c-0.7 0.9-1.6 1.6-2.8 1.6S24.8 45.3 24.1 44.6z"/></svg>
+
+                                    </span>
+                                    <span class="cen-u-flex-1 cen-u-text-m-18-d-16">Custom event triggers</span>
+                                </li>
+                            </ul>
+<a class="cen-btn__alt---small" href="/conversion-analytics">See more</a>
+                        </div>
+                    </li>
+                    <li class="cen-col__three--item">
+<img alt="" class="cen-col__three--image" height="180" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-website-surveys-5f763bee2cda47c6f3ec1c6598fd6bb1.png?vsn=d" width="270">
+                        <div class="cen-col__three--div-wrapper">
+                            <h4 class="cen-col__three--title">Website Surveys</h4>
+                            <p class="cen-col__three--text cen-u-text-g-size-18 cen-u-gmargin-b-25">Collect NPS ratings, qualitative feedback, and support requests directly from your website visitors.</p>
+                            <p class="cen-col__three--text cen-u-text-g-size-18 cen-u-mmargin-b-30-dmargin-0">Target visitors with Surveys based on their page URL, device type, behavior, and more.</p>
+<a class="cen-btn__alt---small cen-u-gmargin-t-auto" href="/surveys">See more</a>
+                        </div>
+                    </li>
+                    <li class="cen-col__three--item">
+<img alt="" class="cen-col__three--image" height="180" role="presentation" src="https://w3-assets.crazyeggcdn.com/images/png/img-live-activty-notifications-085d878d60b63edbab4ce141d871d569.png?vsn=d" width="270">
+                        <div class="cen-col__three--div-wrapper">
+                            <h4 class="cen-col__three--title">Live Activity Tracking & Notifications</h4>
+                            <p class="cen-col__three--text cen-u-text-g-size-18 cen-u-gmargin-b-25">Monitor a feed of live activity on your website. See where pageviews, clicks, errors, and conversions are happening in real time.</p>
+                            <p class="cen-col__three--text cen-u-text-g-size-18 cen-u-mmargin-b-30-dmargin-0">Set up notifications by email, Slack, Zapier, or API for when you receive a certain Conversion or Survey response.</p>
+<a class="cen-btn__alt---small cen-u-gmargin-t-auto" href="/conversion-analytics">See more</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <section class="cen-ih--faq--wrapper">
+<div class="cen-row--regular">
+<div class="cen-ih--faq--content-wrapper">
+<aside>
+<div class="cen-ih--faq--title-wrapper">
+<h3 class="cen-ih--faq--title">CPC Calculator FAQs</h3>
+<p class="cen-ih--faq--subtitle">Need help with your CPC calculations? <button class="cen-ih--faq--subtitle-link" data-action="click->enterprise-contact#showModal" data-target="enterprise-contact.button">Contact our advertising experts</button></p>
+</div>
+</aside>
+<ul class="cen-u-w-100" data-controller="indv">
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable cen-collapsible__clickable--active" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">What is CPC (Cost Per Click)?</span></summary>
+<div class="cen-collapsible__hide cen-collapsible__hide--active" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">CPC, or Cost Per Click, is the amount you pay each time someone clicks on your advertisement. It's a common pricing model used in Google Ads, Facebook Ads, and other paid advertising platforms.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">How does a CPC Calculator work?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">A CPC calculator helps you find your cost per click by dividing the total cost of the campaign by the total number of clicks.</p>
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-t-15"><strong>Formula:</strong><br>CPC = Total Ad Spend ÷ Total Clicks</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">Why should I use a CPC Calculator?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">Using a CPC calculator gives you quick clarity on how much you're paying for each click. It helps optimize ad budgets, compare campaign performance, and make data-driven marketing decisions without manual calculation.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">What inputs do I need for a CPC Calculator?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">You only need two simple inputs:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li><strong>Total Ad Spend</strong> (your total campaign cost)</li>
+<li><strong>Total Clicks</strong> (number of clicks received)</li>
+</ul>
+<p class="cen-text cen-u-text-g-size-18">Enter these values into the calculator to instantly get your CPC.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">What's considered a good CPC?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">A "good" CPC depends on your industry, keywords, and competition. Some industries have CPCs under ₹10, while competitive niches like insurance or legal can exceed ₹200 per click. Aim for a CPC that aligns with your ROI and conversion goals.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">How can I reduce my CPC in online advertising?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">You can lower CPC by:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li>Improving your quality score</li>
+<li>Creating relevant ad copy</li>
+<li>Refining audience targeting</li>
+<li>Adding negative keywords</li>
+<li>Improving landing page experience</li>
+<li>Using better-performing keywords</li>
+</ul>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">Is CPC more important than CPM or CPA?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">Each metric serves a different purpose:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li><strong>CPC</strong> focuses on the cost of clicks</li>
+<li><strong>CPM</strong> focuses on impressions</li>
+<li><strong>CPA</strong> focuses on actual conversions</li>
+</ul>
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-t-15">If your goal is driving traffic, CPC is the most important metric to track.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">Can a CPC Calculator help with budget planning?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">Yes. A CPC calculator helps estimate the number of clicks you can get based on your budget. This makes it easier to forecast campaign performance and allocate ad spend more effectively.</p>
+</div>
+</details>
+</li>
+
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">Can I customize the generated meta descriptions?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Yes! You can regenerate descriptions multiple times to get different variations. Once generated, you can easily copy the text and modify it further to perfectly match your brand voice and specific requirements.</p>
+<p class="cen-text cen-u-text-g-size-18">The tool provides a great starting point, but you always have the flexibility to fine-tune the descriptions to your exact needs.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">Will installing Crazy Egg slow down my site?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-10">Nope! The Crazy Egg Javascript code snippet is asynchronous, so it won't slow down site speed or performance for your visitors or customers.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">What do I get when I upgrade from Crazy Egg’s free plan to a paid plan?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-b-24">Crazy Egg’s paid plans include multiple easy-to-use tools for understanding what visitors do on your website, and experimenting with what will improve engagement or conversions:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li><a class="cen-ih-text-link" href="/heatmaps" rel="noopener noreferrer" target="_blank">Heatmap Reports </a> - Powerful heatmaps that visualize, segment, and analyze visitor behavior in depth.</li>
+<li><a class="cen-ih-text-link" href="/recordings" rel="noopener noreferrer" target="_blank">Session Recordings </a> - Filterable, AI-summarized recordings of actual visitors using your website.</li>
+<li><a class="cen-ih-text-link" href="/errors-tracking" rel="noopener noreferrer" target="_blank">Errors Tracking</a> - Get detailed website error reports, with relevant Session Recordings included to reproduce the issue.</li>
+<li><a class="cen-ih-text-link" href="/ab-testing" rel="noopener noreferrer" target="_blank">A/B Testing</a> - Launch experiments to see which website improvements drive more conversions, with or without needing to code.</li>
+<li><a class="cen-ih-text-link" href="/ctas" rel="noopener noreferrer" target="_blank">Popup CTAs</a> - Quickly add customizable banners or popups on top of any webpage, testing which messages get visitors interested.</li>
+</ul>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">What other metrics should I track along with CPC?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">CPC (Cost Per Click) is just one metric to consider. You should also track:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li><strong>CTR (Click-Through Rate):</strong> Percentage of people who see your ad and click on it</li>
+<li><strong>Conversion Rate:</strong> Percentage of clicks that result in a desired action</li>
+<li><strong>ROAS (Return on Ad Spend):</strong> Revenue generated per dollar spent on ads</li>
+<li><strong>Quality Score:</strong> Search engines' rating of your ad quality and relevance</li>
+</ul>
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-t-15">These metrics together provide a complete picture of your advertising performance.</p>
+</div>
+</details>
+</li>
+
+<li class="cen-collapsible__block cen-ih--faq--block">
+<details>
+<summary class="cen-collapsible__title cen-collapsible__clickable" data-indv-target="collapsibleBtn" data-action="click->indv#showContent" data-scrolltocontent="true"><span class="cen-chevron__faq"></span><span class="cen-u-flex-1">How often should I track my CPC metrics?</span></summary>
+<div class="cen-collapsible__hide" data-indv-target="collapsibleContent">
+<p class="cen-text cen-u-text-g-size-18">The frequency of tracking your CPC metrics depends on your campaign's scale and budget, but here are some general guidelines:</p>
+<ul class="cen-ul cen-text cen-ih--faq--block-list">
+<li><strong>Daily:</strong> For active campaigns with significant daily spend</li>
+<li><strong>Weekly:</strong> For most standard campaigns to spot trends</li>
+<li><strong>Monthly:</strong> For long-term performance analysis and budget planning</li>
+</ul>
+<p class="cen-text cen-u-text-g-size-18 cen-u-gmargin-t-15">Regular monitoring helps you quickly identify issues and optimize your campaigns for better performance.</p>
+</div>
+</details>
+</li>
+
+</ul>
+</div>
+</div>
+</section>
+
+<section class="cen-footer__block-offset cen-ih--faq--footer--margin-minus">
+<div class="cen-ih--faq--footer-wrapper cen-u-gcenter cen-u-bg-gradient--purple_0a">
+<div class="cen-ih--faq--footer-right">
+<h3 class="cen-ih--faq--footer-title">Get started for Free today</h3>
+<ul class="cen-web-analytics__footer--list-alt">
+<li class="cen-u-footer--item cen-u-gmargin-b-15">
+<span class="cen-web-analytics__tick cen-web-analytics__tick--white cen-web-analytics__tick--text-purple cen-u-align--start cen-u-gmargin-t-3">1</span>
+<span class="cen-u-flex-1">Create your free account</span>
+</li>
+<li class="cen-u-footer--item cen-u-gmargin-b-15">
+<span class="cen-web-analytics__tick cen-web-analytics__tick--white cen-web-analytics__tick--text-purple cen-u-align--start cen-u-gmargin-t-3">2</span>
+<span class="cen-u-flex-1">Install with just one tracking script<br/>(or use a tag manager)</span>
+</li>
+</ul>
+</div>
+<div class="cen-ih--faq--footer-left">
+<a class="cen-ih--faq--footer-button" href="/signup/password">Get Started Free</a>
+<ul class="cen-ul cen-ih--faq--footer-list">
+<li>Install in minutes</li>
+<li>Unlimited seats</li>
+<li>Unlimited website domains</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="cen-enterprise-modal__wrapper" id="enterprise_contact_modal" style="display: none;" data-enterprise-contact-target="modal" role="dialog" aria-labelledby="enterpriseDialog" >
+  <div class="cen-enterprise-modal__modal">
+    <button class="cen-enterprise-modal__modal-close-btn" data-action="click->enterprise-contact#hideModal">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M58.5 1.5c2 2 2 5.2 0 7.1L37.1 30l21.4 21.4c2 2 2 5.2 0 7.1 -2 2-5.2 2-7.1 0L30 37.1 8.6 58.5c-2 2-5.2 2-7.1 0 -2-2-2-5.2 0-7.1L22.9 30 1.5 8.6c-2-2-2-5.2 0-7.1s5.2-2 7.1 0L30 22.9 51.4 1.5C53.4-0.5 56.6-0.5 58.5 1.5z"/></svg>
+
+      <span class="visuallyhidden">Close modal</span>
+    </button>
+
+    <div data-enterprise-contact-target="modalForm">
+      <header class="ce-pop-up-modal__header">
+        <div class="cen-enterprise-modal__header-content cen-enterprise-modal__header-content--1-col">
+          <div class="cen-enterprise-modal__badges">
+<img alt="G2 Best Est. ROI - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/BestEstimatedROI_Roi-Winter-2025-c186f3a2e79a30a0d695863bbe10e4ee.svg?vsn=d">
+<img alt="G2 Best meets requirements mid-market - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/BestMeetsRequirements_Mid-Market_MeetsRequirements-Winter-2025-bbc6f6c8b2eeb9b5ebeaaf5efb99b443.svg?vsn=d">
+<img alt="G2 Fastest implementation small business - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/FastestImplementation_Small-Business_GoLiveTime-Winter-2025-f05d20844385de8e091f6813f6c7ec0b.svg?vsn=d">
+<img alt="G2 Leader mid-market - winter 2025" class="ce-image cen-enterprise-modal__badges--image" src="https://w3-assets.crazyeggcdn.com/images/svg/Leader_Mid-Market_Leader-Winter-2025-dad05aa9e4259584c16062893698d4f0.svg?vsn=d">
+          </div>
+          <h3 id="enterpriseDialog" class="cen-heading-3 cen-u-gmargin-b-0 ce-u--g-margin-top-10 ce-pop-up-modal__badges--heading-1-col">
+            Request a personalized<br/> demo of Crazy Egg
+          </h3>
+        </div>
+      </header>
+
+      <section class="cen-enterprise-modal__content">
+        <div class="new-enterprise-contact">
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "46540628",
+              formId: "6680dde4-d88b-455f-8eab-11e49ec8429f"
+            });
+          </script>
+          <script>
+            window.addEventListener("message", function(event) {
+              if(event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted' && event.data.id === "6680dde4-d88b-455f-8eab-11e49ec8429f") {
+                window.dataLayer.push({
+                  'event': 'HubSpot-Form-Submit-Success',
+                  'hs-form-guid': event.data.id
+                });
+              }
+            });
+          </script>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</section>
+
+</div>
+  </main>
+<footer class="cen-footer" data-controller="footer-b">
+  <section class="cen-row cen-footer__row">
+    <div class="cen-footer__logo-container cen-u-gmargin-b-50">
+      <div class="cen-logo cen-logo--footer" >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 47"><path d="M90 12.2C90 5.5 83.8 0 80.9 0c-3 0-9.1 5.5-9.1 12.2 0 3.3 1 6.2 2.5 8.4 0.5 1.1 1.3 2.3 2.2 3.5 1 1.4 2 2.8 2.6 4.2 -0.5 0.2-0.9 0.6-1.1 1.1 0.5 0.1 1 0.2 1.6 0.3 1.5 0.2 2.9 0.1 3.7-0.2 -0.5 0.4-2 0.6-3.7 0.5 -0.6 0-1.2-0.1-1.7-0.2 0 0.1 0 0.2 0 0.3v2.5c0 1.1 0.9 1.4 2 1.4h2.8c1.1 0 2-0.3 2-1.4v-2.5c0-1-0.7-1.7-1.6-1.9 0.4-0.8 0.8-1.6 1.2-2.4l0.4-0.8 0.3-0.6c0.2-0.4 0.6-1.2 1-1.9l0 0C88.3 20.4 90 16.6 90 12.2L90 12.2zM84.3 24.2L84 24.8l-0.4 0.8c-0.4 0.9-0.9 1.7-1.3 2.6H81v-3.7h-0.6v3.7h-1c-0.6-1.4-1.6-2.9-2.6-4.4 -0.3-0.4-0.5-0.8-0.8-1.1 1.4 1.1 3 1.8 4.8 1.8 1.4 0 2.8-0.4 3.9-1.2C84.6 23.5 84.5 23.8 84.3 24.2L84.3 24.2zM84.2 23.2c0 0 2.8-3.1 3.7-7.5 -1.1 1.3-2.9 2.1-5 2.1 -3.3 0-6-2.1-6-4.7s2.7-4.7 6-4.7c2.1 0 3.9 0.8 5 2.1 -1.7-7.2-9.6-9-9.6-9s0.5-0.6 1.5-0.9c0.9-0.2 1.3-0.2 1.9 0 0.7 0.2 7.6 4 7.6 11.4C89.3 19.3 84.2 23.2 84.2 23.2zM5 32.5c1.3 0 3.5 0.4 3.5 1.9 0 0.8-0.5 1.4-1.2 1.4 -0.8 0-1-0.5-2.1-0.5 -1.5 0-2.2 1.1-2.2 2.5 0 1.3 0.7 2.5 2 2.5s1.8-0.5 2.3-0.5c0.7 0 1.2 0.7 1.2 1.3 0 1.5-2.3 2-3.5 2 -3 0-5-2.4-5-5.3C0 34.9 2 32.5 5 32.5zM9.1 34.3c0-0.8 0.6-1.5 1.5-1.5 0.8 0 1.3 0.5 1.5 0.9 0.5-0.6 1.2-1.1 2-1.1s1.5 0.6 1.5 1.5c0 1-0.8 1.3-1.8 1.6 -1.3 0.4-1.7 0.7-1.7 2.2v3.6c0 0.9-0.6 1.5-1.5 1.5s-1.5-0.7-1.5-1.5V34.3zM25.2 41.4c0 0.9-0.6 1.5-1.5 1.5 -0.7 0-1.2-0.5-1.4-0.9 -0.6 0.8-1.4 1.1-2.5 1.1 -2.6 0-4.5-2.3-4.5-5.3 0-2.9 2-5.3 4.5-5.3 1.1 0 1.9 0.3 2.5 1.1 0.2-0.4 0.7-0.9 1.4-0.9 0.9 0 1.5 0.7 1.5 1.5C25.2 34.3 25.2 41.4 25.2 41.4zM18.3 37.8c0 1.3 0.7 2.5 2 2.5s2-1.1 2-2.5c0-1.3-0.7-2.5-2-2.5C19 35.4 18.3 36.5 18.3 37.8zM30 35.6h-2.6c-0.9 0-1.5-0.4-1.5-1.3s0.6-1.3 1.5-1.3H33c0.5 0 0.8 0.1 1.1 0.4 0.2 0.2 0.2 0.4 0.2 0.7s-0.1 0.5-0.4 0.9l-4 5.4H33c0.9 0 1.5 0.4 1.5 1.3S33.9 43 33 43h-5.9c-0.5 0-0.7 0-1-0.2 -0.4-0.2-0.4-0.6-0.4-0.8s0-0.5 0.5-1.1L30 35.6zM37.7 41.9L35.2 36c-0.3-0.8-0.6-1.5-0.6-1.8 0-0.8 0.7-1.4 1.4-1.4s1.2 0.4 1.5 1.1l1.7 4.4 1.6-4c0.4-0.9 0.8-1.6 1.6-1.6 0.9 0 1.5 0.6 1.5 1.5 0 0.4-0.2 0.9-0.4 1.3l-4.3 10.1C39 46.4 38.7 47 37.7 47c-1.1 0-1.5-0.8-1.5-1.3s0.2-0.8 0.5-1.6C36.7 44.1 37.7 41.9 37.7 41.9zM47.5 38.8c0 0.6 0.5 1.6 2.4 1.6 1.5 0 2.4-0.9 3-0.9 0.7 0 1.2 0.5 1.2 1.3 0 1.4-2.4 2.3-4.6 2.3 -3.2 0-5.1-2.3-5.1-5.3 0-2.8 2.1-5.3 5.2-5.3 2.9 0 4.8 2.4 4.8 5 0 1.1-0.5 1.3-1.4 1.3h-5.3L47.5 38.8zM51.3 36.8c0-0.6-0.8-1.8-1.9-1.8 -1.1 0-1.9 1.1-1.9 1.8H51.3zM64.7 41.9c0 3.7-2.4 5.1-5.3 5.1 -1.5 0-4.4-0.6-4.4-2.2 0-0.6 0.7-1.3 1.2-1.3 0.9 0 1.4 0.9 3.1 0.9 1.8 0 2.4-1 2.4-2.6l0 0c-0.6 0.9-1.7 1.1-2.7 1.1 -2.8 0-4.3-2.5-4.3-5.1 0-2.9 2-5.3 4.5-5.3 1.1 0 1.9 0.3 2.5 1.1 0.2-0.4 0.7-0.9 1.4-0.9 0.9 0 1.5 0.7 1.5 1.5L64.7 41.9 64.7 41.9zM59.7 35.4c-1.3 0-2 1.1-2 2.5s0.7 2.5 2 2.5 2-1.1 2-2.5S61 35.4 59.7 35.4zM75.5 41.9c0 3.7-2.4 5.1-5.3 5.1 -1.5 0-4.4-0.6-4.4-2.2 0-0.6 0.7-1.3 1.2-1.3 0.9 0 1.4 0.9 3.1 0.9 1.8 0 2.4-1 2.4-2.6l0 0c-0.6 0.9-1.7 1.1-2.7 1.1 -2.8 0-4.3-2.5-4.3-5.1 0-2.9 2-5.3 4.5-5.3 1.1 0 1.9 0.3 2.5 1.1 0.2-0.4 0.7-0.9 1.4-0.9 0.9 0 1.5 0.7 1.5 1.5L75.5 41.9 75.5 41.9zM70.5 35.4c-1.3 0-2 1.1-2 2.5s0.7 2.5 2 2.5 2-1.1 2-2.5C72.6 36.5 71.8 35.4 70.5 35.4z"/><path class="st0" d="M85.1 11.9c-0.5 0-1-0.3-1.7-0.3 -1.2 0-1.8 0.7-1.8 1.5 0 0.7 0.7 1.5 1.8 1.5 0.5 0 1.3-0.3 1.6-0.3 0.5 0 0.9 0.3 0.9 0.6 0 0.7-1.8 1-2.6 1 -2.3 0-3.8-1.2-3.8-2.7 0-1.4 1.6-2.7 3.9-2.7 0.9 0 2.6 0.2 2.6 0.9C85.9 11.6 85.5 11.9 85.1 11.9z"/><path class="st0" d="M77.8 42.1h-0.3c-0.1 0-0.2-0.1-0.2-0.2 0-0.1 0.1-0.2 0.2-0.2h1c0.1 0 0.2 0.1 0.2 0.2 0 0.1 0 0.2-0.2 0.2h-0.3v1.4c0 0.1-0.1 0.2-0.2 0.2s-0.2-0.1-0.2-0.2V42.1L77.8 42.1zM78.9 42c0-0.1 0.1-0.2 0.3-0.2 0.1 0 0.2 0.1 0.3 0.2l0.3 1.1 0.3-1.1c0-0.1 0.1-0.2 0.3-0.2 0.2 0 0.2 0.1 0.3 0.2l0.2 1.6 0 0c0 0.1-0.1 0.2-0.2 0.2s-0.2-0.1-0.2-0.2l-0.2-1.1L80 43.7c0 0.1-0.1 0.2-0.2 0.2 -0.2 0-0.2-0.1-0.2-0.2l-0.3-1.2 -0.2 1.1c0 0.1-0.1 0.2-0.2 0.2s-0.2-0.1-0.2-0.2l0 0L78.9 42z"/></svg>
+ 
+      </div>
+      <p class="cen-text">Make the most of every visitor</p>
+    </div>
+    <nav class="cen-footer__nav-wrapper" role="navigation">
+      <ul class="cen-footer__nav cen-u-gmargin-b-30" >
+
+        <li class="cen-footer__nav-item" >
+          <span id="title-features" class="cen-heading-4 cen-footer__heading aria-focus" aria-controls="info-features" aria-expanded="false" tabindex="0" tab-index="0" data-action="click->footer-b#handleAria" data-footer-b-target="heading">Features<span class="cen-chevron__footer" aria-hidden="true"></span></span>
+          <ul id="info-features" class="cen-footer__subnav" aria-labelledby="title-features" aria-live="polite" aria-hidden="true">
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/overview"><span class="visuallyhidden">Opens in new window</span>Product Overview</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/heatmaps"><span class="visuallyhidden">Opens in new window</span>Heatmaps</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/recordings"><span class="visuallyhidden">Opens in new window</span>Session Recordings</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/ab-testing"><span class="visuallyhidden">Opens in new window</span>A/B Testing</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/web-analytics"><span class="visuallyhidden">Opens in new window</span>Web Analytics</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/conversion-analytics"><span class="visuallyhidden">Opens in new window</span>Conversion Analytics</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/funnels"><span class="visuallyhidden">Opens in new window</span>Conversion Funnels</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/errors-tracking"><span class="visuallyhidden">Opens in new window</span>Errors Tracking</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/surveys"><span class="visuallyhidden">Opens in new window</span>Surveys</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/ctas"><span class="visuallyhidden">Opens in new window</span>Popup CTAs</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="cen-footer__nav-item" >
+          <span id="title-ce-for" class="cen-heading-4 cen-footer__heading aria-focus" aria-controls="info-ce-for" aria-expanded="false" tabindex="0" tab-index="0" data-action="click->footer-b#handleAria" data-footer-b-target="heading">Crazy Egg For<span class="cen-chevron__footer" aria-hidden="true"></span></span>
+          <ul id="info-ce-for" class="cen-footer__subnav" aria-labelledby="title-ce-for" aria-live="polite" aria-hidden="true">
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/agencies"><span class="visuallyhidden">Opens in new window</span>Agencies</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/ecommerce"><span class="visuallyhidden">Opens in new window</span>E-Commerce</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/lead-gen"><span class="visuallyhidden">Opens in new window</span>Lead Gen</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/education"><span class="visuallyhidden">Opens in new window</span>Education</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/shopify"><span class="visuallyhidden">Opens in new window</span>Shopify</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/enterprise"><span class="visuallyhidden">Opens in new window</span>Enterprise</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="cen-footer__nav-item" >
+          <span id="title-resources" class="cen-heading-4 cen-footer__heading aria-focus" aria-controls="info-resources" aria-expanded="false" tabindex="0" tab-index="0" data-action="click->footer-b#handleAria" data-footer-b-target="heading">Resources<span class="cen-chevron__footer" aria-hidden="true"></span></span>
+          <ul id="info-resources" class="cen-footer__subnav" aria-labelledby="title-resources" aria-live="polite" aria-hidden="true">
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/case-studies"><span class="visuallyhidden">Opens in new window</span>Case Studies</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/faq"><span class="visuallyhidden">Opens in new window</span>FAQ</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://support.crazyegg.com/"><span class="visuallyhidden">Opens in new window</span>Help Center</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://support.crazyegg.com/?open_modal=contact"><span class="visuallyhidden">Opens in new window</span>Contact Us</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/blog/"><span class="visuallyhidden">Opens in new window</span>Blog</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/signup"><span class="visuallyhidden">Opens in new window</span>Free Trial</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/careers"><span class="visuallyhidden">Opens in new window</span>Careers</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://crazyegg.partnerstack.com/"><span class="visuallyhidden">Opens in new window</span>Affiliate Program</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/pricing"><span class="visuallyhidden">Opens in new window</span>Pricing</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="cen-footer__nav-item" >
+          <span id="title-legal" class="cen-heading-4 cen-footer__heading aria-focus" aria-controls="info-legal" aria-expanded="false" tabindex="0" tab-index="0" data-action="click->footer-b#handleAria" data-footer-b-target="heading">Legal<span class="cen-chevron__footer" aria-hidden="true"></span></span>
+          <ul id="info-legal" class="cen-footer__subnav" aria-labelledby="title-legal" aria-live="polite" aria-hidden="true">
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/terms"><span class="visuallyhidden">Opens in new window</span>Terms of Use</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/privacy"><span class="visuallyhidden">Opens in new window</span>Privacy Policy</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/cookies"><span class="visuallyhidden">Opens in new window</span>Cookie Policy</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="/opt-out"><span class="visuallyhidden">Opens in new window</span>Opt-out</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="cen-footer__nav-item" >
+          <span id="title-social" class="cen-heading-4 cen-footer__heading aria-focus" aria-controls="info-social" aria-expanded="false" tabindex="0" tab-index="0" data-action="click->footer-b#handleAria" data-footer-b-target="heading">Social<span class="cen-chevron__footer" aria-hidden="true"></span></span>
+          <ul id="info-social" class="cen-footer__subnav" aria-labelledby="title-social" aria-live="polite" aria-hidden="true">
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://www.facebook.com/crazyegganalytics"><span class="visuallyhidden">Opens in new window</span>Facebook</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://www.youtube.com/channel/UCJNe_xmPi07YezxaqfoRVqg"><span class="visuallyhidden">Opens in new window</span>Youtube</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://twitter.com/CrazyEgg"><span class="visuallyhidden">Opens in new window</span>Twitter</a>
+            </li>
+
+            <li class="cen-footer__subnav-item">
+              <a class="cen-link cen-link--footer" href="https://www.linkedin.com/company/crazy-egg"><span class="visuallyhidden">Opens in new window</span>LinkedIn</a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+    <p class="cen-text cen-footer__copy">&copy; Crazy Egg, Inc. 2026</p>
+  </section>
+</footer>
+
+
+<div data-controller="island-footer">
+  <div class="cen-island__footer" data-island-footer-target="island">
+    <div class="cen-island__footer--text-container">
+      <p class="cen-island__footer--header">Improve what's working, fix what isn't and test new ideas.</p>
+      <p class="cen-island__footer--para">No credit card required</p>
+    </div>
+<form action="/surveys/url" class="cen-island__footer--form" method="post" onsubmit="handleTag()"><input name="_csrf_token" type="hidden" hidden value="XwgkGg8AHAoYAlQoD0IgF2kEFTwUJS1W9zUVHWokqe9RM2SGQSoUMWu8">
+<label class="visuallyhidden" for="form_island_footer">Enter your website url to get started</label>
+<input id="current_path" name="current_path" type="hidden" value="/instant-heatmaps">
+<input class="cen-island__footer--form-input" id="form_island_footer" name="url" placeholder="Your website URL" type="text">
+<button class="cen-island__footer--form-button" type="submit"> Get Started Free </button>
+</form>
+  </div>
+</div>
+
+<script>
+  function handleTag() {
+    if (window.CE2) {
+      CE2.addTag("fixed_footer_form_free");
+    }
+  }
+</script>
+
+
+<section class="gdpr-cookie-modal__wrapper gdpr-cookie-modal hidden" data-behavior="gdpr-form" data-controller="gdpr-form" data-gdpr-form-target="container">
+  <button id="gdpr_dismiss" class="ce-pop-up-modal__modal-close-btn gdpr-cookie-modal__closeButton" data-action="gdpr-form#closeModal">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" focusable="false"><path d="M58.5 1.5c2 2 2 5.2 0 7.1L37.1 30l21.4 21.4c2 2 2 5.2 0 7.1 -2 2-5.2 2-7.1 0L30 37.1 8.6 58.5c-2 2-5.2 2-7.1 0 -2-2-2-5.2 0-7.1L22.9 30 1.5 8.6c-2-2-2-5.2 0-7.1s5.2-2 7.1 0L30 22.9 51.4 1.5C53.4-0.5 56.6-0.5 58.5 1.5z"/></svg>
+
+    <span class="visuallyhidden">close modal</span>
+  </button>
+  <button id="gdpr_show" class="hidden" data-action="gdpr-form#showModal"></button>
+  <div class="gdpr-cookie-modal__modal">
+    <section class="gdpr-cookie-modal__content" data-gdpr-form-target="basicContent">
+      <h2 class="gdpr-cookie-modal__title ce-heading-5">
+        This website uses cookies
+      </h2>
+      <p>We use cookies to provide a tailored experience on Crazy Egg.</p>
+    </section>
+
+    <section class="gdpr-cookie-modal__content hidden" data-gdpr-form-target="advancedContent">
+      <h2 class="gdpr-cookie-modal__title ce-heading-5">
+        Customize your cookies
+      </h2>
+      <p>We use cookies to provide a tailored experience on Crazy Egg.</p>
+    </section>
+<form action="/gdpr" data-gdpr-form-target="form" data-remote method="post"><input name="_csrf_token" type="hidden" hidden value="XwgkGg8AHAoYAlQoD0IgF2kEFTwUJS1W9zUVHWokqe9RM2SGQSoUMWu8">
+      <div data-gdpr-form-target="preferencesForm" class="hidden gdpr-cookie-modal__customizePreferences">
+        <div class="gdpr-cookie-modal__customSection">
+          <div class="gdpr-cookie-modal__customSectionRow">
+            <h3 class="ce-heading-5">Essential cookies</h3>
+            <div class="gdpr-cookie-modal__consentAction">
+              <label class="toggle-switch">
+                <input id="essential" name="essential" type="hidden" value="true">
+                <input disabled name="essential" type="hidden" value="false"><input checked disabled id="essential" name="essential" type="checkbox" value="true">
+                <span class="slider round"></span>
+                <span class="visuallyhidden">toggle marketing cookie consent</span>
+              </label>
+            </div>
+          </div>
+          <p>
+            Cookies that are essential to the use and operation of our website and services.
+          </p>
+        </div>
+
+        <div class="gdpr-cookie-modal__customSection">
+          <div class="gdpr-cookie-modal__customSectionRow">
+            <h3 class="ce-heading-5">Marketing and advertising</h3>
+            <div class="gdpr-cookie-modal__consentAction">
+              <label class="toggle-switch">
+                <input name="marketing" type="hidden" value="false"><input checked data-gdpr-form-target="checkbox" id="marketing" name="marketing" type="checkbox" value="true">
+                <span class="slider round"></span>
+                <span class="visuallyhidden">toggle marketing cookie consent</span>
+              </label>
+            </div>
+          </div>
+          <p>
+            Cookies that are used by Crazy Egg to better understand the types of individuals who are interested in our products and services and how we can promote those services based on that information.
+          </p>
+        </div>
+
+        <div class="gdpr-cookie-modal__customSection">
+          <div class="gdpr-cookie-modal__customSectionRow">
+            <h3 class="ce-heading-5">Analytics</h3>
+            <div class="gdpr-cookie-modal__consentAction">
+              <label class="toggle-switch">
+                <input name="analytics" type="hidden" value="false"><input checked data-gdpr-form-target="checkbox" id="analytics" name="analytics" type="checkbox" value="true">
+                <span class="slider round"></span>
+                <span class="visuallyhidden">toggle analytics cookie consent</span>
+              </label>
+            </div>
+          </div>
+          <p>
+            Cookies that help us understand how visitors engage with our website, such as usage statistics, or to reconstruct viewed UI elements in order to improve our services.
+          </p>
+        </div>
+      </div>
+
+      <div class="gdpr-cookie-modal__actionSection">
+        <div class="gdpr-cookie-modal__buttonRow">
+          <button type="button" class="ce-btn gdpr-cookie-modal__acceptbutton" data-gdpr-form-target="acceptAllButton" data-action="gdpr-form#acceptAll">
+            Accept cookies
+          </button>
+          <button type="button" class="ce-btn gdpr-cookie-modal__editButton" data-gdpr-form-target="editButton" data-action="gdpr-form#togglePreferences">
+            Edit cookies
+          </button>
+          <button class="hidden ce-btn gdpr-cookie-modal__acceptbutton" data-gdpr-form-target="savePreferencesButton" data-action="gdpr-form#savePreferences" type="submit">Save preferences</button>
+          <button type="button" class="hidden gdpr-cookie-modal__cancelButton" data-gdpr-form-target="cancelButton" data-action="gdpr-form#togglePreferences">
+            Cancel
+          </button>
+        </div>
+        <div class="gdpr-cookie-modal__policyRow">
+          <a class="ce-link" href="/opt-out" target="_blank">
+
+              Opt out
+
+          </a>
+          <a class="ce-link" href="/privacy" target="_blank">Privacy policy</a>
+          <a class="ce-link" href="/cookies" target="_blank">Cookie policy</a>
+        </div>
+      </div>
+</form>
+  </div>
+</section>
+</body>
+</html>
