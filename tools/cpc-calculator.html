@@ -742,13 +742,19 @@
                             <label for="total-cost" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Total Ad Spend</label>
                             <div style="position: relative;">
 <span id="currency-symbol" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); font-size: 16px; color: #6c757d; font-weight: 600;">$</span>
-                                <input type="number" id="total-cost" placeholder="0.00" min="0" step="0.01" style="width: 100%; padding: 16px 20px 16px 35px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;" oninput="calculateCPC()">
+                                <input type="number" id="total-cost" placeholder="0.00" min="0" step="0.01" style="width: 100%; padding: 16px 20px 16px 35px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">
                             </div>
                         </div>
                         
                         <div class="form-group" style="margin-bottom: 30px;">
                             <label for="total-clicks" style="display: block; margin-bottom: 10px; font-weight: 600; color: #2c3e50; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">Total Clicks</label>
-                            <input type="number" id="total-clicks" placeholder="0" min="1" step="1" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;" oninput="calculateCPC()">
+                            <input type="number" id="total-clicks" placeholder="0" min="1" step="1" style="width: 100%; padding: 16px 20px; border: 2px solid #e1e5e9; border-radius: 10px; font-size: 16px; box-sizing: border-box; transition: all 0.3s ease; background: white; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;">
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <button id="calculate-btn" onclick="calculateCPC()" style="width: 100%; padding: 18px 24px; background: linear-gradient(135deg, #8abc00 0%, #7aa600 100%); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: proxima-nova, Nunito, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(138, 188, 0, 0.3);">
+                                Calculate CPC
+                            </button>
                         </div>
                         
                         <div id="result-container" style="margin-top: 35px; display: none;">
@@ -860,11 +866,6 @@
                         
                         // Add event listeners
                         currencySelector.addEventListener('change', handleCurrencyChange);
-                        totalCostInput.addEventListener('input', calculateCPC);
-                        totalClicksInput.addEventListener('input', calculateCPC);
-                        
-                        // Initial calculation if there are values
-                        calculateCPC();
                     }
 
                     // Detect user's currency based on browser language or IP
@@ -889,7 +890,6 @@
                         const selectedCurrency = currencySelector.value;
                         updateCurrencySymbol(selectedCurrency);
                         localStorage.setItem('preferredCurrency', selectedCurrency);
-                        calculateCPC();
                     }
 
                     // Update currency symbol in the UI
